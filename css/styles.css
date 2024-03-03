@@ -5,6 +5,7 @@
 
 body {
     background-color: black;
+    z-index: -1;
 }
 
 /* Aggiunto stile per la navbar */
@@ -17,11 +18,13 @@ nav {
     z-index: 9999;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.7);
-    align-items: center; /* Centra verticalmente gli elementi */
+    align-items: center;
+    /* Centra verticalmente gli elementi */
     height: 100px;
     border-bottom: solid 1px;
     border-color: white;
     display: flex;
+    z-index: 9999;
 
 }
 
@@ -29,21 +32,23 @@ nav {
 .logo {
     width: 70px;
     position: absolute;
-    margin-top: -30px;  
+    margin-top: -30px;
 }
 
 #amos {
     color: white;
-    position: relative;  
+    position: relative;
     font-size: 20px;
-    top: 30px; /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
+    top: 30px;
+    /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
 }
 
 /* Modificato stile per i link nella navbar */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between; /* Allinea gli elementi sulla navbar */
+    justify-content: space-between;
+    /* Allinea gli elementi sulla navbar */
     margin: 0;
     padding: 0;
     z-index: 9999;
@@ -60,13 +65,84 @@ nav a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
-    
+
 }
 
 
 .nav-container {
-    max-width: 1200px; /* Scegli la larghezza massima desiderata */
-    margin: 0 auto; /* Centra il container orizzontalmente */
+    max-width: 1200px;
+    /* Scegli la larghezza massima desiderata */
+    margin: 0 auto;
+    /* Centra il container orizzontalmente */
 }
 
+
+/*-------SLIDER-------*/
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.immagineSlide {
+    width: 100%;
+}
+
+
+/* Stili per le frecce di navigazione */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    /* Aggiunto z-index */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/* Stili per i punti di navigazione personalizzati */
+.custom-dots {
+    text-align: center;
+    /* Allinea i punti di navigazione al centro */
+    margin-top: 20px;
+    /* Spazio sopra i punti di navigazione */
+}
+
+.custom-dots .dot {
+    display: inline-block;
+    /* Visualizzazione in linea */
+    width: 11px;
+    /* Dimensioni del punto */
+    height: 11px;
+    /* Dimensioni del punto */
+    margin: 0 5px;
+    /* Spaziatura tra i punti */
+    border-radius: 50%;
+    /* Forma circolare */
+    background-color: #424242;
+    /* Colore di sfondo del punto */
+    border: none;
+    /* Bordo del punto */
+    cursor: pointer;
+    /* Cambio del cursore al passaggio del mouse */
+    transition: background-color 0.3s ease;
+    /* Animazione del cambio di colore al passaggio del mouse */
+}
+
+.custom-dots .dot.active {
+    background-color: #ffffff;
+    /* Colore di sfondo del punto attivo */
+}
 

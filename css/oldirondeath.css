@@ -1,0 +1,60 @@
+.gioco {
+    width: 100%;
+    height: auto;
+}
+
+.titolo {
+    color: white;
+    font-size: 30px;
+}
+
+.trailer {
+    background-color: red;
+    width: 1100px;
+    height: 500px;
+}
+
+/* Personalizzazione del container */
+.custom-container {
+    max-width: 1100px; /* Larghezza massima del container personalizzato */
+    margin: 0 auto; /* Centratura del container */
+}
+
+
+.titolo2 {
+    color: white;
+    font-size: 18px;
+}
+
+.box{
+    background-color: red;
+    width: 600px;
+    height: 400px;
+
+}
+
+.titoloCol {
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.descrizione{
+    text-align: justify;
+    color: white;
+}
+
+.carta{
+    background-color: red;
+    width: 150px;
+    height: 200px;
+    align-content: center;
+    margin-top: -20px;
+}
+
+/*CONTAINER 2 PERSONALIZZATO*/
+/* .custom-container2 {
+    max-width: 1500px; 
+    margin: 0 auto; 
+} */
