@@ -247,6 +247,7 @@ nav a {
     opacity: 0; /* Imposta l'opacità del menu a 0 */
     transition: opacity 0.3s ease; /* Aggiungi una transizione all'opacità */
     text-align: center;
+    padding: 20px;
 
 }
 
@@ -266,6 +267,7 @@ nav a {
 
 .menu-toggle {
     cursor: pointer;
+    
 }
 
 .hamburger {
