@@ -25,7 +25,7 @@
 
 .titolo2 {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: titoli;
 
 }
@@ -67,7 +67,8 @@
 }
 
 /*CONTAINER 2 PERSONALIZZATO*/
-/* .custom-container2 {
-    max-width: 1500px; 
+ .custom-container2 {
+    max-width: 1300px; 
     margin: 0 auto; 
-} */
+} 
+
