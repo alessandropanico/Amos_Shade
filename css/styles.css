@@ -20,6 +20,9 @@
     height: 600px;
     width: auto;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introPayOff {
@@ -28,7 +31,9 @@
     position: absolute;
     color: white;
     font-family: payoff;
+    text-align: center;
 }
+
 
 
 .hidden {
@@ -112,30 +117,6 @@ nav a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------SLIDER-------*/
 
 .slider {
@@ -209,9 +190,24 @@ nav a {
 
 
 
+/*-----------------------------------------*/
+/*-------------SLIDE RESPONSIVE------------*/
+
+@media screen and (max-width: 768px) {
+    .prev,
+    .next {
+        font-size: 10px; /* Riduci la dimensione delle frecce */
+    }
+
+    .custom-dots {
+        margin-top: 10px; /* Riduci lo spazio sopra i punti di navigazione */
+    }
+}
+
 
 
 /*--------------------------------------*/
+/*--------------MENU RESPONSIVE----------------*/
 .navmobile {
     display: none;
 }
@@ -229,10 +225,23 @@ nav a {
 .mobile-menu {
     display: none;
     list-style-type: none;
+    opacity: 0; /* Imposta l'opacità del menu a 0 */
+    transition: opacity 0.3s ease; /* Aggiungi una transizione all'opacità */
+    text-align: center;
 }
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1; /* Quando il menu è attivo, imposta l'opacità a 1 */
+}
+
 
 .mobile-menu a {
     font-family: titoli;
+    text-decoration: none;
+    color:white;
 }
 
 .menu-toggle {
@@ -240,19 +249,15 @@ nav a {
 }
 
 .hamburger {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: #ffffff;
     margin: 5px;
-}
-
-.mobile-menu.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 
 .mobile-menu li {
     margin-bottom: 10px;
 }
+
+

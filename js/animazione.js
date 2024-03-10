@@ -1,5 +1,3 @@
-//CARICAMENTO INZIIALE DELLA PAGINA INDEX
-
 document.addEventListener('DOMContentLoaded', function () {
     var fadeInDuration = 1000;
     var fadeOutDuration = 1000;
@@ -18,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         fadeIn('main-content', 2000);
                         document.getElementById('navbar').classList.remove('hidden');
                         fadeIn('navbar', 2000);
+                        // Disabilita completamente la sezione #primo
+                        document.getElementById('primo').style.display = 'none';
                     }, finalWaitDuration);
                 });
             }, waitDuration);
@@ -46,12 +46,11 @@ function fadeIn(elementId, duration, callback) {
 function fadeOut(elementId, duration, callback) {
     var element = document.getElementById(elementId);
     var start = null;
-    var initialOpacity = parseFloat(window.getComputedStyle(element).opacity);
 
     function step(timestamp) {
         if (!start) start = timestamp;
         var progress = timestamp - start;
-        element.style.opacity = initialOpacity - progress / duration;
+        element.style.opacity = 1 - progress / duration;
         if (progress < duration) {
             window.requestAnimationFrame(step);
         } else {
@@ -61,6 +60,3 @@ function fadeOut(elementId, duration, callback) {
 
     window.requestAnimationFrame(step);
 }
-
-//------------------------------------------------------------------------
-
