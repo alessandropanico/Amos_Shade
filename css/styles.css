@@ -1,7 +1,39 @@
+/*------------------------*/
+@font-face {
+    font-family: paragrafo;
+    src: url("../FONT/Prompt-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: titoli;
+    src: url("../FONT/Syncopate-Regular.ttf");
+}
+
+@font-face {
+    font-family: payoff;
+    src: url("../FONT/Michroma-Regular.ttf");
+}
+
+/*------------------------*/
+
+.amosShade {
+    height: 600px;
+    width: auto;
+    position: absolute;
+}
+
+.introPayOff {
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-family: payoff;
+}
+
+
 .hidden {
     display: none;
 }
-
 
 body {
     background-color: black;
@@ -40,6 +72,7 @@ nav {
     position: relative;
     font-size: 20px;
     top: 30px;
+    font-family: titoli;
     /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
 }
 
@@ -77,6 +110,32 @@ nav a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------SLIDER-------*/
 
 .slider {
@@ -102,6 +161,7 @@ nav a {
     z-index: 1;
     /* Aggiunto z-index */
 }
+
 
 .prev {
     left: 0;
@@ -146,3 +206,53 @@ nav a {
     /* Colore di sfondo del punto attivo */
 }
 
+
+
+
+
+
+/*--------------------------------------*/
+.navmobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #desktop {
+        display: none;
+    }
+
+    .navmobile {
+        display: block;
+    }
+}
+
+.mobile-menu {
+    display: none;
+    list-style-type: none;
+}
+
+.mobile-menu a {
+    font-family: titoli;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}

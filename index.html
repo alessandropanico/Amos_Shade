@@ -33,31 +33,54 @@
 
     <!--LE GRANDEZZE VANNO MIGLIORATE SU PHOTHOSHOP! (SIA LE SLIDE CHE I LOGHI DEI GIOCHI!-->
     <div id="main-content" class="hidden">
+
         <div id="navbar" class="hidden">
-            <nav>
+
+            <nav id="desktop">
                 <div class="container">
                     <div class="d-flex justify-content-start" id="amos">
                         AMOS SHADE
                     </div>
-
+            
                     <div class="d-flex justify-content-center">
                         <a href="index.html"><img src="./immaginiGenerali/faviconTEMPORANEO.png" class="logo"></a>
                     </div>
-
+            
                     <div class="d-flex justify-content-end">
                         <ul>
-                            <li><a href="https://www.google.com/"><i class="fab fa-youtube fa-2x"
-                                        style="color: #ffffff;"></i></a></li>
-                            <li><a href="https://www.google.com/"><i class="fab fa-twitter fa-2x"
-                                        style="color: #ffffff;"></i></a></li>
-                            <li><a href="https://www.google.com/"><i class="fab fa-instagram icon fa-2x"
-                                        style="color: #ffffff;"></i></a></li>
-                            <li><a href="./pagine/contatti.html">CONTACT</a></li>
+                            <li><a href="https://www.google.com/"><i class="fab fa-youtube fa-2x" style="color: #ffffff;"></i></a></li>
+                            <li><a href="https://www.google.com/"><i class="fab fa-twitter fa-2x" style="color: #ffffff;"></i></a></li>
+                            <li><a href="https://www.google.com/"><i class="fab fa-instagram icon fa-2x" style="color: #ffffff;"></i></a></li>
+                            <li><a style="font-family: titoli;" href="./pagine/contatti.html">CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
+            <div class="navmobile">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <div class="menu-toggle">
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                        </div>
+                    </div>
+                  
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="./pagine/contatti.html">CONTACT</a></li>
+                        <li><a href="https://www.google.com/"><i class="fab fa-youtube fa-2x" style="color: #ffffff;"></i></a></li>
+                        <li><a href="https://www.google.com/"><i class="fab fa-twitter fa-2x" style="color: #ffffff;"></i></a></li>
+                        <li><a href="https://www.google.com/"><i class="fab fa-instagram icon fa-2x" style="color: #ffffff;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+
         </div>
+        
 
         <section style="margin-top: 100px ">
 
@@ -91,20 +114,20 @@
     </div>
 
     <!--IMMAGINI INIZIALI DELLA PAGINA! Partirà prima questo!-->
-    <section id="intro-section" style="margin-top: 100px">
+     <section id="intro-section" style="margin-bottom: 100px">
         <div class="d-flex justify-content-center">
-            <img id="intro-image" src="./immaginiGenerali/temp.png"
-                style="height: 250px; width: auto; position: absolute;">
+            <img id="intro-image" src="./ImmaginiUfficiali/Logo_Amos Shade.png"
+                 class="amosShade">
         </div>
     </section>
 
-    <section id="text-section" style="margin-top: 250px">
+    <section id="text-section" style="margin-top: 500px">
         <div class="d-flex justify-content-center">
-            <div id="intro-text" style="font-size: 50px; opacity: 0; position: absolute; color:white">
-                FRASE 1 - FRASE 2 - FRASE 3
+            <div id="intro-text" class="introPayOff">
+                INNOVATING GAME INDUSTRY
             </div>
         </div>
-    </section>
+    </section> 
 
 
 </body>
@@ -114,6 +137,7 @@
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 crossorigin="anonymous"></script>
 <script src="./js/slide.js"></script>
-<script src="./js/animazione.js"></script>
+<script src="./js/lib.js"></script>
+ <script src="./js/animazione.js"></script>
 
 </html>

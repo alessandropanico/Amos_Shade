@@ -40,9 +40,11 @@
     text-align: left;
 }
 
-.descrizione{
+.descrizione {
     text-align: justify;
     color: white;
+    word-break: break-all;
+    max-width: 70ch; /* Imposta la larghezza massima a 50 caratteri */
 }
 
 .carta{
