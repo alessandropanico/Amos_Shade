@@ -34,7 +34,28 @@
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .amosShade {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin-top: 60px
+    }
+ 
 
+    .introPayOff {
+        font-size: 20px; /* Riduci la dimensione del font per dispositivi mobili */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: payoff;
+        text-align: center;
+        margin-top: 120px;
+    }
+    
+}
 
 .hidden {
     display: none;
@@ -116,7 +137,6 @@ nav a {
 
 
 
-
 /*-------SLIDER-------*/
 
 .slider {
@@ -189,7 +209,6 @@ nav a {
 
 
 
-
 /*-----------------------------------------*/
 /*-------------SLIDE RESPONSIVE------------*/
 
@@ -228,6 +247,7 @@ nav a {
     opacity: 0; /* Imposta l'opacità del menu a 0 */
     transition: opacity 0.3s ease; /* Aggiungi una transizione all'opacità */
     text-align: center;
+
 }
 
 .mobile-menu.active {
