@@ -248,6 +248,12 @@ nav a {
     transition: opacity 0.3s ease; /* Aggiungi una transizione all'opacità */
     text-align: center;
     padding: 20px;
+    position: absolute;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.785);
+    border-radius: 20px;
+    border: solid 2px;
+    border-color: white;
 
 }
 
