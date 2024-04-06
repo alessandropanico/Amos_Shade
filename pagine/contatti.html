@@ -24,6 +24,7 @@
 
     <!-- Font Awesome Kit -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                                     style="color: #ffffff;"></i></a></li>
                         <li><a href="https://www.google.com/"><i class="fab fa-instagram icon fa-2x"
                                     style="color: #ffffff;"></i></a></li>
-                        <li><a style="font-family: titoli;" href="contatti.html">CONTACT</a></li>
+                        <li><a class="contact" href="contatti.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,12 +92,19 @@
                         <h1 style="color:white">CONTACT US</h1>
                     </div>
                     <div style="color:white">
-                        <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è
-                            considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese
-                            una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più
-                            di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente
-                            inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili
-                            “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione
+
+                        <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
+                            Lorem Ipsum è
+                            considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo
+                            tipografo prese
+                            una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non
+                            solo a più
+                            di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci
+                            sostanzialmente
+                            inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri
+                            trasferibili
+                            “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di
+                            impaginazione
                             come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
                     </div>
 
@@ -109,25 +117,29 @@
                     </div>
 
                 </div>
-        
+
                 <div class="col-md-6">
                     <div class="container">
                         <form id="amosForm">
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" required>
+                                <input style="background-color: rgb(54, 54, 54); color:white; border:none" type="text"
+                                    class="form-control" id="nome" name="nome" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input style="background-color: rgb(54, 54, 54); color:white;border:none" type="email"
+                                    class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="oggetto" class="form-label">Oggetto</label>
-                                <input type="text" class="form-control" id="oggetto" name="oggetto" required>
+                                <input style="background-color: rgb(54, 54, 54); color:white;border:none" type="text"
+                                    class="form-control" id="oggetto" name="oggetto" required>
                             </div>
                             <div class="mb-3">
                                 <label for="messaggio" class="form-label">Messaggio</label>
-                                <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
+                                <textarea style="background-color: rgb(54, 54, 54); color:white; border:none"
+                                    class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
                             </div>
                             <button id="inviaButtonEM" type="submit" class="btn btn-primary">SEND</button>
                         </form>
@@ -138,11 +150,11 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
 
-    <section style="margin-top:70px"></section>
+    <section style="margin-top:50px"></section>
 
     <script src="../js/lib.js"></script>
     <script src="../js/email.js"></script>

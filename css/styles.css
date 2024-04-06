@@ -34,28 +34,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .amosShade {
-        position: relative;
-        height: auto;
-        width: 100%;
-        margin-top: 60px
-    }
- 
 
-    .introPayOff {
-        font-size: 20px; /* Riduci la dimensione del font per dispositivi mobili */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-family: payoff;
-        text-align: center;
-        margin-top: 120px;
-    }
-    
-}
 
 .hidden {
     display: none;
@@ -221,6 +200,11 @@ nav a {
     .custom-dots {
         margin-top: 10px; /* Riduci lo spazio sopra i punti di navigazione */
     }
+
+    .immagineSlide{
+        height: 500px;
+        width: auto;
+    }
 }
 
 
@@ -231,7 +215,7 @@ nav a {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     #desktop {
         display: none;
     }
@@ -273,7 +257,7 @@ nav a {
 
 .menu-toggle {
     cursor: pointer;
-    
+    margin-top: 30px;
 }
 
 .hamburger {
@@ -288,4 +272,32 @@ nav a {
     margin-bottom: 10px;
 }
 
+.contact{
+    font-family: titoli;
+    position: absolute;
+    margin-top: 5px;
+}
 
+
+@media screen and (max-width: 600px) {
+    .amosShade {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin-top: 60px
+    }
+ 
+
+    .introPayOff {
+        font-size: 20px; /* Riduci la dimensione del font per dispositivi mobili */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: payoff;
+        text-align: center;
+        margin-top: 120px;
+    }
+    
+}
