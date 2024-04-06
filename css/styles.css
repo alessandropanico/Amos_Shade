@@ -16,6 +16,9 @@
 
 /*------------------------*/
 
+
+
+
 .amosShade {
     height: 600px;
     width: auto;
@@ -34,10 +37,28 @@
     text-align: center;
 }
 
-
+.myButton{
+    background-color: transparent;
+    border: solid 1px white;
+    width: 300px;
+    height: 50px;
+    font-family: titoli;
+    font-size: 16px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+}
 
 .hidden {
     display: none;
+
+}
+
+#main-content {
+    transition: opacity 0.5s ease-in-out; /* Aggiungi una transizione per l'opacità */
+    opacity: 0; /* Imposta l'opacità iniziale a 0 */
+
 }
 
 body {
@@ -69,7 +90,12 @@ nav {
 .logo {
     width: 70px;
     position: absolute;
-    margin-top: -30px;
+    margin-top: -10px;
+}
+
+.logoMobile{
+    width: 70px;
+    display: flex;
 }
 
 #amos {
@@ -79,6 +105,12 @@ nav {
     top: 30px;
     font-family: titoli;
     /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
+}
+
+.oid{
+    width: 240px;
+    position: absolute;
+    margin-top: -25px;
 }
 
 /* Modificato stile per i link nella navbar */
@@ -118,13 +150,18 @@ nav a {
 
 /*-------SLIDER-------*/
 
+.sectionSlider{
+    margin-top: 0px 
+}
+
 .slider {
     width: 100%;
     margin: 0 auto;
 }
 
 .immagineSlide {
-    width: 100%;
+    width: 100vw;
+    height: auto;
 }
 
 
@@ -162,28 +199,18 @@ nav a {
 
 .custom-dots .dot {
     display: inline-block;
-    /* Visualizzazione in linea */
-    width: 11px;
-    /* Dimensioni del punto */
-    height: 11px;
-    /* Dimensioni del punto */
-    margin: 0 5px;
-    /* Spaziatura tra i punti */
+    height: 10px;
+    width: 5px;
+    margin: 15px;
     border-radius: 50%;
-    /* Forma circolare */
     background-color: #424242;
-    /* Colore di sfondo del punto */
     border: none;
-    /* Bordo del punto */
     cursor: pointer;
-    /* Cambio del cursore al passaggio del mouse */
     transition: background-color 0.3s ease;
-    /* Animazione del cambio di colore al passaggio del mouse */
 }
 
 .custom-dots .dot.active {
     background-color: #ffffff;
-    /* Colore di sfondo del punto attivo */
 }
 
 
@@ -191,17 +218,20 @@ nav a {
 /*-----------------------------------------*/
 /*-------------SLIDE RESPONSIVE------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+
     .prev,
     .next {
-        font-size: 10px; /* Riduci la dimensione delle frecce */
+        font-size: 10px;
+        /* Riduci la dimensione delle frecce */
     }
 
     .custom-dots {
-        margin-top: 10px; /* Riduci lo spazio sopra i punti di navigazione */
+        margin-top: 10px;
+        /* Riduci lo spazio sopra i punti di navigazione */
     }
 
-    .immagineSlide{
+    .immagineSlide {
         height: 500px;
         width: auto;
     }
@@ -228,8 +258,10 @@ nav a {
 .mobile-menu {
     display: none;
     list-style-type: none;
-    opacity: 0; /* Imposta l'opacità del menu a 0 */
-    transition: opacity 0.3s ease; /* Aggiungi una transizione all'opacità */
+    opacity: 0;
+    /* Imposta l'opacità del menu a 0 */
+    transition: opacity 0.3s ease;
+    /* Aggiungi una transizione all'opacità */
     text-align: center;
     padding: 20px;
     position: absolute;
@@ -245,19 +277,20 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 1; /* Quando il menu è attivo, imposta l'opacità a 1 */
+    opacity: 1;
+    /* Quando il menu è attivo, imposta l'opacità a 1 */
 }
 
 
 .mobile-menu a {
     font-family: titoli;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .menu-toggle {
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .hamburger {
@@ -272,7 +305,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-.contact{
+.contact {
     font-family: titoli;
     position: absolute;
     margin-top: 5px;
@@ -286,10 +319,11 @@ nav a {
         width: 100%;
         margin-top: 60px
     }
- 
+
 
     .introPayOff {
-        font-size: 20px; /* Riduci la dimensione del font per dispositivi mobili */
+        font-size: 20px;
+        /* Riduci la dimensione del font per dispositivi mobili */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -299,5 +333,5 @@ nav a {
         text-align: center;
         margin-top: 120px;
     }
-    
+
 }

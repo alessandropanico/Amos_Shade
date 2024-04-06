@@ -1,4 +1,43 @@
+.titolo{
+    font-family: titoli;
+    color: white;
+}
+
+.titolo2{
+    font-family: payoff;
+    color: white;
+}
+
+.testo{
+
+}
+
 label{
     color:white;
 }
 
+.sectionForm{
+    margin-top:200px
+}
+
+#amosForm{
+    font-family: payoff;
+
+}
+
+#amosForm, input{
+    font-family: paragrafo;
+    
+}
+
+.form-control:focus {
+    border-color: initial !important;
+    box-shadow: none !important;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+
+.form-control{
+    background-color: rgb(54, 54, 54); color:white; border:none
+}

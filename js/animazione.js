@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var waitDuration = 1000;
     var finalWaitDuration = 1000;
 
-    fadeIn('intro-image', fadeInDuration);
+    fadeIn('navbar', fadeInDuration);
 
     setTimeout(function () {
+        fadeIn('intro-image', fadeInDuration);
         fadeIn('intro-text', fadeInDuration, function () {
             setTimeout(function () {
                 fadeOut('intro-image', fadeOutDuration);
@@ -14,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     setTimeout(function () {
                         document.getElementById('main-content').classList.remove('hidden');
                         fadeIn('main-content', 2000);
-                        document.getElementById('navbar').classList.remove('hidden');
-                        fadeIn('navbar', 2000);
                         // Disabilita completamente la sezione #primo
                         document.getElementById('primo').style.display = 'none';
                     }, finalWaitDuration);
@@ -28,14 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function fadeIn(elementId, duration, callback) {
     var element = document.getElementById(elementId);
     var start = null;
+    var initialOpacity = parseFloat(window.getComputedStyle(element).opacity);
 
     function step(timestamp) {
         if (!start) start = timestamp;
         var progress = timestamp - start;
-        element.style.opacity = progress / duration;
+        element.style.opacity = initialOpacity + progress / duration;
         if (progress < duration) {
             window.requestAnimationFrame(step);
         } else {
+            element.style.opacity = 1; // Assicura che l'opacità sia esattamente 1 alla fine
             if (callback) callback();
         }
     }
@@ -46,14 +47,16 @@ function fadeIn(elementId, duration, callback) {
 function fadeOut(elementId, duration, callback) {
     var element = document.getElementById(elementId);
     var start = null;
+    var initialOpacity = parseFloat(window.getComputedStyle(element).opacity);
 
     function step(timestamp) {
         if (!start) start = timestamp;
         var progress = timestamp - start;
-        element.style.opacity = 1 - progress / duration;
+        element.style.opacity = initialOpacity - progress / duration;
         if (progress < duration) {
             window.requestAnimationFrame(step);
         } else {
+            element.style.opacity = 0; // Assicura che l'opacità sia esattamente 0 alla fine
             if (callback) callback();
         }
     }
