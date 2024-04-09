@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }, waitDuration);
         });
     }, fadeInDuration + waitDuration);
+
+
 });
 
 function fadeIn(elementId, duration, callback) {

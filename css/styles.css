@@ -17,16 +17,15 @@
 /*------------------------*/
 
 
-
-
 .amosShade {
     height: 600px;
     width: auto;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .introPayOff {
     font-size: 20px;
@@ -35,9 +34,37 @@
     color: white;
     font-family: payoff;
     text-align: center;
+    margin-top: 550px;
 }
 
-.myButton{
+
+
+ @media screen and (min-width:1920px) {
+
+    .amosShade {
+        height: 65.934vh;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .introPayOff {
+        font-size: 20px;
+        opacity: 0;
+        position: absolute;
+        color: white;
+        font-family: payoff;
+        text-align: center;
+        margin-top: 650px;
+    }
+} 
+
+
+
+.myButton {
     background-color: transparent;
     border: solid 1px white;
     width: 300px;
@@ -56,8 +83,10 @@
 }
 
 #main-content {
-    transition: opacity 0.5s ease-in-out; /* Aggiungi una transizione per l'opacità */
-    opacity: 0; /* Imposta l'opacità iniziale a 0 */
+    transition: opacity 0.5s ease-in-out;
+    /* Aggiungi una transizione per l'opacità */
+    opacity: 0;
+    /* Imposta l'opacità iniziale a 0 */
 
 }
 
@@ -74,10 +103,9 @@ nav {
     width: 100%;
     padding: 15px;
     z-index: 9999;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
-    /* Centra verticalmente gli elementi */
     height: 100px;
     border-bottom: solid 1px;
     border-color: white;
@@ -93,7 +121,7 @@ nav {
     margin-top: -10px;
 }
 
-.logoMobile{
+.logoMobile {
     width: 70px;
     display: flex;
 }
@@ -107,7 +135,7 @@ nav {
     /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
 }
 
-.oid{
+.oid {
     width: 240px;
     position: absolute;
     margin-top: -25px;
@@ -150,8 +178,15 @@ nav a {
 
 /*-------SLIDER-------*/
 
-.sectionSlider{
-    margin-top: 0px 
+.slide a{
+    text-decoration: none;
+    
+}
+
+
+
+.sectionSlider {
+    margin-top: 0px
 }
 
 .slider {
@@ -161,7 +196,7 @@ nav a {
 
 .immagineSlide {
     width: 100vw;
-    height: auto;
+    height: 100vh;
 }
 
 
@@ -213,6 +248,26 @@ nav a {
     background-color: #ffffff;
 }
 
+/*--------TEXT SLIDE--------*/
+
+.Old-text{
+    position: absolute;
+    margin-top: -340px;
+    color: white;
+    margin-left: 910px;
+    font-size: 30px;
+    font-family: titoli;
+
+}
+
+.old-desc{
+    position: absolute;
+    margin-top: -280px;
+    color: white;
+    margin-left: 910px;
+    font-family: paragrafo;
+
+}
 
 
 /*-----------------------------------------*/
@@ -314,24 +369,31 @@ nav a {
 
 @media screen and (max-width: 600px) {
     .amosShade {
-        position: relative;
-        height: auto;
-        width: 100%;
-        margin-top: 60px
+        height: 350px;
+        /* Altezza desiderata */
+        width: auto;
+        position: absolute;
+        left: 50%;
+        /* Posiziona il left edge al centro della pagina */
+        top: 50%;
+        /* Posiziona il top edge al centro della pagina */
+        transform: translate(-50%, -50%);
+        /* Muove l'elemento indietro di metà della sua larghezza e altezza */
     }
 
 
     .introPayOff {
-        font-size: 20px;
-        /* Riduci la dimensione del font per dispositivi mobili */
+        font-size: 16px;
+        opacity: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         color: white;
         font-family: payoff;
         text-align: center;
-        margin-top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 480px;
     }
 
 }
+
+
