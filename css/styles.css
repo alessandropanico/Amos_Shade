@@ -81,13 +81,15 @@
     display: none;
 
 }
+.global{
+   overflow-y: hidden;
+}
 
 #main-content {
     transition: opacity 0.5s ease-in-out;
     /* Aggiungi una transizione per l'opacità */
     opacity: 0;
     /* Imposta l'opacità iniziale a 0 */
-
 }
 
 body {
@@ -118,12 +120,13 @@ nav {
 .logo {
     width: 70px;
     position: absolute;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .logoMobile {
     width: 70px;
     display: flex;
+
 }
 
 #amos {
@@ -138,7 +141,7 @@ nav {
 .oid {
     width: 240px;
     position: absolute;
-    margin-top: -25px;
+    margin-top: -30px;
 }
 
 /* Modificato stile per i link nella navbar */
@@ -269,6 +272,35 @@ nav a {
 
 }
 
+@media screen and (min-width:1920px) {
+
+
+    .global{
+        overflow-y: hidden;
+     }
+
+    .Old-text{
+        position: absolute;
+        margin-top: -340px;
+        color: white;
+        margin-left: 910px;
+        font-size: 30px;
+        font-family: titoli;
+    
+    }
+    
+    .old-desc{
+        position: absolute;
+        margin-top: -280px;
+        color: white;
+        margin-left: 910px;
+        font-family: paragrafo;
+    
+    }
+
+
+}
+
 
 /*-----------------------------------------*/
 /*-------------SLIDE RESPONSIVE------------*/
@@ -363,11 +395,17 @@ nav a {
 .contact {
     font-family: titoli;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 
 @media screen and (max-width: 600px) {
+
+    .global{
+        overflow-y: hidden;
+     }
+
+
     .amosShade {
         height: 350px;
         /* Altezza desiderata */
@@ -397,3 +435,32 @@ nav a {
 }
 
 
+@media screen and (max-width: 1024px) {
+
+    .amosShade {
+        height: 600px;
+        /* Altezza desiderata */
+        width: auto;
+        position: absolute;
+        left: 50%;
+        /* Posiziona il left edge al centro della pagina */
+        top: 50%;
+        /* Posiziona il top edge al centro della pagina */
+        transform: translate(-50%, -50%);
+        /* Muove l'elemento indietro di metà della sua larghezza e altezza */
+    }
+
+
+    .introPayOff {
+        font-size: 20px;
+        opacity: 0;
+        position: absolute;
+        color: white;
+        font-family: payoff;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 700px;
+    }
+
+}
