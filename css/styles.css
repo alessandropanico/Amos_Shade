@@ -40,7 +40,7 @@
 
 
 
- @media screen and (min-width:1920px) {
+@media screen and (min-width:1920px) {
 
     .amosShade {
         height: 65.934vh;
@@ -61,7 +61,7 @@
         text-align: center;
         margin-top: 460px;
     }
-} 
+}
 
 
 
@@ -82,8 +82,9 @@
     display: none;
 
 }
-.global{
-   overflow-y: hidden;
+
+.global {
+    overflow-y: hidden;
 }
 
 #main-content {
@@ -182,14 +183,16 @@ nav a {
 
 /*-------SLIDER-------*/
 
-.slider a{
+.slider {
+    cursor: pointer;
+}
+
+.slider a {
     text-decoration: none;
-    
-}
-
-.slide1{
 
 }
+
+.slide1 {}
 
 
 
@@ -246,10 +249,12 @@ nav a {
 
 .custom-dots .dot {
     display: inline-block;
-    height: 8px; /* Regola l'altezza dei punti */
+    height: 8px;
+    /* Regola l'altezza dei punti */
     width: 10px;
     margin: 15px;
-    border-radius: 100%; /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
+    border-radius: 100%;
+    /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
     background-color: #424242;
     border: none;
     cursor: pointer;
@@ -266,7 +271,7 @@ nav a {
 
 /*--------TEXT SLIDE--------*/
 
-.Old-text{
+.Old-text {
     position: absolute;
     margin-top: -340px;
     color: white;
@@ -276,18 +281,17 @@ nav a {
 
 }
 
-.old-desc{
+.old-desc {
     position: relative;
     margin-top: -290px;
     color: white;
     margin-left: 910px;
     font-family: paragrafo;
-    font-size: 14px;
-    max-width: 60ch; /* Imposta la larghezza massima a 50 caratteri */
+    font-size: 12px;
 
 }
 
-.dragon-text{
+.dragon-text {
     position: absolute;
     margin-top: -150px;
     color: white;
@@ -297,16 +301,16 @@ nav a {
 
 }
 
-.dragon-desc{
+.dragon-desc {
     position: relative;
     margin-top: -100px;
     color: white;
     margin-left: 910px;
     font-family: paragrafo;
     font-size: 14px;
-    max-width: 60ch; /* Imposta la larghezza massima a 50 caratteri */
 
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -314,14 +318,14 @@ nav a {
 
 
 
-.old-desc{
-    display: none;
-}
+    .old-desc {
+        display: none;
+    }
 
-.immagineSlide{
-    height: auto;
-    width: 100vh;
-}
+    .immagineSlide {
+        height: auto;
+        width: 100vh;
+    }
 
 
 
@@ -332,27 +336,50 @@ nav a {
 @media screen and (min-width:1920px) {
 
 
-    .global{
-        overflow-y: hidden;
-     }
 
-    .Old-text{
+    .Old-text {
         position: absolute;
-        margin-top: -340px;
+        margin-top: -43.956vh;
         color: white;
-        margin-left: 910px;
+        margin-left: 1100px;
         font-size: 30px;
         font-family: titoli;
-    
+
     }
-    
-    .old-desc{
+
+    .old-desc {
         position: absolute;
-        margin-top: -280px;
+        margin-top: -350px;
         color: white;
-        margin-left: 910px;
+        margin-left: 1100px;
         font-family: paragrafo;
-    
+
+    }
+
+
+}
+
+@media screen and (min-width:2560px) {
+
+
+
+    .Old-text {
+        position: absolute;
+        margin-top: -400px;
+        color: white;
+        margin-left: 1100px;
+        font-size: 30px;
+        font-family: titoli;
+
+    }
+
+    .old-desc {
+        position: absolute;
+        margin-top: -350px;
+        color: white;
+        margin-left: 1100px;
+        font-family: paragrafo;
+
     }
 
 
@@ -375,7 +402,7 @@ nav a {
         /* Riduci lo spazio sopra i punti di navigazione */
     }
 
-  
+
 }
 
 
@@ -455,9 +482,9 @@ nav a {
 
 @media screen and (max-width: 600px) {
 
-    .global{
+    .global {
         overflow-y: hidden;
-     }
+    }
 
 
     .amosShade {
@@ -489,24 +516,20 @@ nav a {
 }
 
 /*---CSS TABLET--*/
-@media screen and (max-width: 1366px) {
+/* @media screen and (max-width: 1366px) {
 
-    .global{
+    .global {
         overflow-y: hidden;
-     }
+    }
 
 
     .amosShade {
         height: 600px;
-        /* Altezza desiderata */
         width: auto;
         position: absolute;
         left: 50%;
-        /* Posiziona il left edge al centro della pagina */
         top: 50%;
-        /* Posiziona il top edge al centro della pagina */
         transform: translate(-50%, -50%);
-        /* Muove l'elemento indietro di metà della sua larghezza e altezza */
     }
 
 
@@ -522,4 +545,4 @@ nav a {
         margin-top: 700px;
     }
 
-}
+} */
