@@ -3,6 +3,8 @@
     height: auto;
 }
 
+
+
 .titolo {
     color: white;
     font-size: 30px;
@@ -20,6 +22,13 @@
 .custom-container {
     max-width: 1100px; /* Larghezza massima del container personalizzato */
     margin: 0 auto; /* Centratura del container */
+}
+
+.icona{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
 }
 
 
@@ -69,6 +78,7 @@
 /*CONTAINER 2 PERSONALIZZATO*/
  .custom-container2 {
     max-width: 1300px; 
-    margin: 0 auto; 
+    margin: 0 auto;
+     
 } 
 

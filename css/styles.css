@@ -17,6 +17,7 @@
 /*------------------------*/
 
 
+
 .amosShade {
     height: 600px;
     width: auto;
@@ -34,7 +35,7 @@
     color: white;
     font-family: payoff;
     text-align: center;
-    margin-top: 550px;
+    margin-top: 370px;
 }
 
 
@@ -58,7 +59,7 @@
         color: white;
         font-family: payoff;
         text-align: center;
-        margin-top: 650px;
+        margin-top: 460px;
     }
 } 
 
@@ -181,10 +182,16 @@ nav a {
 
 /*-------SLIDER-------*/
 
-.slide a{
+.slider a{
     text-decoration: none;
     
 }
+
+.slide1{
+
+}
+
+
 
 
 
@@ -231,24 +238,30 @@ nav a {
 .custom-dots {
     text-align: center;
     /* Allinea i punti di navigazione al centro */
-    margin-top: 20px;
+    margin-top: -50px;
     /* Spazio sopra i punti di navigazione */
+    z-index: 9999;
+    position: absolute;
 }
 
 .custom-dots .dot {
     display: inline-block;
-    height: 10px;
-    width: 5px;
+    height: 8px; /* Regola l'altezza dei punti */
+    width: 10px;
     margin: 15px;
-    border-radius: 50%;
+    border-radius: 100%; /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
     background-color: #424242;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+
+
 .custom-dots .dot.active {
     background-color: #ffffff;
+
+
 }
 
 /*--------TEXT SLIDE--------*/
@@ -264,13 +277,57 @@ nav a {
 }
 
 .old-desc{
-    position: absolute;
-    margin-top: -280px;
+    position: relative;
+    margin-top: -290px;
     color: white;
     margin-left: 910px;
     font-family: paragrafo;
+    font-size: 14px;
+    max-width: 60ch; /* Imposta la larghezza massima a 50 caratteri */
 
 }
+
+.dragon-text{
+    position: absolute;
+    margin-top: -150px;
+    color: white;
+    margin-left: 910px;
+    font-size: 30px;
+    font-family: titoli;
+
+}
+
+.dragon-desc{
+    position: relative;
+    margin-top: -100px;
+    color: white;
+    margin-left: 910px;
+    font-family: paragrafo;
+    font-size: 14px;
+    max-width: 60ch; /* Imposta la larghezza massima a 50 caratteri */
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+
+
+.old-desc{
+    display: none;
+}
+
+.immagineSlide{
+    height: auto;
+    width: 100vh;
+}
+
+
+
+
+}
+
 
 @media screen and (min-width:1920px) {
 
@@ -318,10 +375,7 @@ nav a {
         /* Riduci lo spazio sopra i punti di navigazione */
     }
 
-    .immagineSlide {
-        height: 500px;
-        width: auto;
-    }
+  
 }
 
 
@@ -429,13 +483,18 @@ nav a {
         text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 480px;
+        margin-top: 380px;
     }
 
 }
 
+/*---CSS TABLET--*/
+@media screen and (max-width: 1366px) {
 
-@media screen and (max-width: 1024px) {
+    .global{
+        overflow-y: hidden;
+     }
+
 
     .amosShade {
         height: 600px;
@@ -452,7 +511,7 @@ nav a {
 
 
     .introPayOff {
-        font-size: 20px;
+        font-size: 16px;
         opacity: 0;
         position: absolute;
         color: white;
