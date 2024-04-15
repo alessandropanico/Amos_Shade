@@ -7,48 +7,48 @@
 
 .titolo {
     color: white;
-    font-size: 30px;
+    font-size: 1.953vw;
     font-family: titoli;
 
 }
 
 .trailer {
-    background-color: red;
-    width: 1100px;
-    height: 500px;
+    width: 71.615vw;
+    height: 68.531vh;
 }
 
 /* Personalizzazione del container */
 .custom-container {
-    max-width: 1100px; /* Larghezza massima del container personalizzato */
+    max-width:  71.615vw; /* Larghezza massima del container personalizzato */
     margin: 0 auto; /* Centratura del container */
 }
 
 .icona{
-    width: 150px;
+    width: 9.766vw;
     align-items: center;
     justify-content: center;
-    margin-bottom: -20px;
+    margin-bottom: -2.741vh;
 }
 
 
 .titolo2 {
     color: white;
-    font-size: 14px;
+    font-size: 0.911vw;
     font-family: titoli;
 
 }
 
 .box{
     background-color: red;
-    width: 750px;
-    height: 500px;
+    width: 48.828vw;
+    height: 68.531vh;
+    flex: 0 0 auto;
 
 }
 
 .titoloCol {
     color: white;
-    font-size: 30px;
+    font-size: 1.953vw;
     text-align: left;
     font-family: titoli;
 }
@@ -59,26 +59,47 @@
     word-break: break-all;
     max-width: 50ch; /* Imposta la larghezza massima a 50 caratteri */
     font-family: paragrafo;
+    font-size: 1.042vw;
 }
 
 .descrizione2 {
     text-align: justify;
     color: white;
     font-family: paragrafo;
+    font-size: 1.042vw;
+
 }
 
 .carta{
     background-color: red;
-    width: 150px;
-    height: 200px;
+    width: 9.766vw;
+    height: 27.412vh;
     align-content: center;
-    margin-top: -20px;
+    margin-top: -2.741vh;
 }
 
 /*CONTAINER 2 PERSONALIZZATO*/
  .custom-container2 {
-    max-width: 1300px; 
+    max-width: 84.635vw; 
     margin: 0 auto;
      
 } 
 
+.myP{
+    margin-left: 6.51vw;
+    align-self: center;
+}
+
+
+.myS{
+    margin-left: 6.51vw;
+    align-self: center;
+}
+
+.space100{
+    margin-top: 13.706vh;
+}
+
+.space200{
+    margin-top: 27.412vh;
+}
