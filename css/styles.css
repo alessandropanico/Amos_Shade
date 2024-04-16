@@ -194,7 +194,7 @@ nav {
     }
 
     .myNav{
-        margin-right: -5vw;
+        margin-right: -vw;
     }
 
 
@@ -297,15 +297,15 @@ nav a {
 .custom-dots {
     text-align: center;
     /* Allinea i punti di navigazione al centro */
-    margin-top: 0px;
     /* Spazio sopra i punti di navigazione */
     z-index: 9999;
     position: absolute;
+    margin-top: -3.255vw;
 }
 
 .custom-dots .dot {
     display: inline-block;
-    height: 1.953vw;
+    height: 0.7vw;
     /* Regola l'altezza dei punti */
     width: 0.651vw;
     margin: 15px;
@@ -315,7 +315,10 @@ nav a {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
+
+
 
 /* @media screen and (min-width:1920px){
     .custom-dots {
@@ -388,7 +391,7 @@ nav a {
     position: relative;
     margin-top: -13.706vh;
     color: white;
-    margin-left: 59.245vw;
+    margin-left: 58vw;
     font-family: paragrafo;
     font-size: 0.911vw;
 
