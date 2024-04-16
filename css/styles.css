@@ -176,25 +176,25 @@ nav {
 }
 
 
-@media screen and (min-width:2560px){
+@media screen and (width:2560px){
     .oid {
        margin-left: -15.625vw;
     }
 
     .myNav{
-        margin-right: -11.719vw;
+        margin-right: -14vw;
     }
 
 
 }
 
-@media screen and (min-width:1920px){
+@media screen and (width:1920px){
     .oid {
        margin-left: -10vw;
     }
 
     .myNav{
-        margin-right: -1vw;
+        margin-right: -5vw;
     }
 
 

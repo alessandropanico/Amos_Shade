@@ -1,33 +1,64 @@
-.titolo{
+.titolo {
+    color: white;
+    font-size: 1.953vw;
     font-family: titoli;
-    color: white;
+
 }
 
-.titolo2{
+.mail {
     font-family: payoff;
     color: white;
+    font-size: 1vw;
 }
 
-.testo{
-
-}
-
-label{
-    color:white;
-}
-
-.sectionForm{
-    margin-top:200px
-}
-
-#amosForm{
+.titolo2 {
     font-family: payoff;
+    color: white;
+    font-size: 1.953vw;
 
 }
 
-#amosForm, input{
-    font-family: paragrafo;
+@media screen and (width:2560px) {
+    .titolo2 {
+        font-size: 1.5vw;
+
+    }
+
     
+    .row{
+        justify-content: center;
+    }
+
+
+}
+
+
+.descrizione {
+    text-align: center;
+    color: white;
+    /* word-break: break-all;
+    max-width: 50ch;  */
+    font-family: paragrafo;
+    font-size: 1.042vw;
+}
+
+label {
+    color: white;
+}
+
+.sectionForm {
+    margin-top: 10vw;
+}
+
+#amosForm {
+    font-family: payoff;
+
+}
+
+#amosForm,
+input {
+    font-family: paragrafo;
+
 }
 
 .form-control:focus {
@@ -38,6 +69,69 @@ label{
 }
 
 
-.form-control{
-    background-color: rgb(54, 54, 54); color:white; border:none
+.form-control {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border: none
+}
+
+.col-md-6 {
+    width: 58.594vw;
+}
+
+.row{
+    justify-content: center;
+}
+
+
+#amosForm{
+    margin-top: 2vh;
+}
+
+
+@media screen and (width:1920px) {
+
+    .col-md-6 {
+        width: 58.594vw;
+    }
+
+    .sectionForm {
+        margin-top: 8vw;
+    }
+
+    .row{
+        justify-content: center;
+    }
+
+    #amosForm{
+        margin-top: 2vh;
+    }
+    
+    
+}
+
+
+@media screen and (width:2560px) {
+
+    .col-md-6 {
+        width: 58.594vw;
+    }
+
+    .descrizione {
+        text-align: center;
+        color: white;
+        /* word-break: break-all;
+        max-width: 50ch;  */
+        font-family: paragrafo;
+        font-size: 1.5vw;
+    }
+
+    .form-label{
+        font-size: 1vw;
+    }
+
+    #amosForm{
+        margin-top: 2vh;
+    }
+
 }

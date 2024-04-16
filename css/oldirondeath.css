@@ -41,7 +41,7 @@
 .box{
     background-color: red;
     width: 48.828vw;
-    height: 68.531vh;
+    height: 60vh;
     flex: 0 0 auto;
 
 }
@@ -51,19 +51,32 @@
     font-size: 1.953vw;
     text-align: left;
     font-family: titoli;
+    margin-left: 4.8vw;
+}
+
+.glox{
+    max-width: 40vw;
 }
 
 .descrizione {
     text-align: justify;
     color: white;
-    word-break: break-all;
-    max-width: 50ch; /* Imposta la larghezza massima a 50 caratteri */
+    /* word-break: break-all;
+    max-width: 50ch;  */
     font-family: paragrafo;
     font-size: 1.042vw;
 }
 
 .descrizione2 {
     text-align: justify;
+    color: white;
+    font-family: paragrafo;
+    font-size: 1.042vw;
+
+}
+
+.descrizione3 {
+    text-align: center;
     color: white;
     font-family: paragrafo;
     font-size: 1.042vw;
@@ -86,13 +99,13 @@
 } 
 
 .myP{
-    margin-left: 6.51vw;
+    /* margin-left: 6.51vw; */
     align-self: center;
 }
 
 
 .myS{
-    margin-left: 6.51vw;
+    /* margin-left: 6.51vw; */
     align-self: center;
 }
 
