@@ -31,7 +31,7 @@
 
 
 .introPayOff {
-    font-size: 1.302vw;
+    font-size: 0.8vw;
     opacity: 0;
     position: absolute;
     color: white;
@@ -170,6 +170,37 @@ nav {
     position: absolute;
     margin-top: -4.112vh;
 }
+
+.myNav{
+    margin-right: 7vw;
+}
+
+
+@media screen and (min-width:2560px){
+    .oid {
+       margin-left: -15.625vw;
+    }
+
+    .myNav{
+        margin-right: -11.719vw;
+    }
+
+
+}
+
+@media screen and (min-width:1920px){
+    .oid {
+       margin-left: -10vw;
+    }
+
+    .myNav{
+        margin-right: -1vw;
+    }
+
+
+}
+
+
 
 /* Modificato stile per i link nella navbar */
 nav ul {
@@ -327,7 +358,7 @@ nav a {
     position: absolute;
     margin-top: -46.601vh;
     color: white;
-    margin-left: 59.245vw;
+    margin-left: 58vw;
     font-size: 1.953vw;
     font-family: titoli;
 
@@ -337,7 +368,7 @@ nav a {
     position: relative;
     margin-top: -39.748vh;
     color: white;
-    margin-left: 59.245vw;
+    margin-left: 58vw;
     font-family: paragrafo;
     font-size: 0.781vw;
 
@@ -347,7 +378,7 @@ nav a {
     position: absolute;
     margin-top: -20.559vh;
     color: white;
-    margin-left: 59.245vw;
+    margin-left: 58vw;
     font-size: 1.953vw;
     font-family: titoli;
 
