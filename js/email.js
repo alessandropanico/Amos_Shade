@@ -36,6 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 await emailjs.send(emailData.service_id, emailData.template_id, emailData.template_params, emailData.user_id);
                 const aziendaMessage = document.getElementById("aziendaMessage");
                 aziendaMessage.textContent = "Informazioni inviate con successo!";
+
+                document.getElementById("nome").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("oggetto").value = "";
+                document.getElementById("messaggio").value = "";
+
+
             } catch (error) {
                 console.error("Errore nell'invio dell'email:", error);
             }
