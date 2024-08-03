@@ -42,53 +42,6 @@
 
 
 
-/* @media screen and (min-width:1920px) {
-
-    .amosShade {
-        height: 65.934vh;
-        width: auto;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .introPayOff {
-        font-size: 20px;
-        opacity: 0;
-        position: absolute;
-        color: white;
-        font-family: payoff;
-        text-align: center;
-        margin-top: 460px;
-    }
-} */
-
-/* @media screen and (min-width:2560px) {
-
-    .amosShade {
-        height: 65.934vh;
-        width: auto;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .introPayOff {
-        font-size: 30px;
-        opacity: 0;
-        position: absolute;
-        color: white;
-        font-family: payoff;
-        text-align: center;
-        margin-top: 730px;
-    }
-} */
-
-
 
 .myButton {
     background-color: transparent;
@@ -320,33 +273,6 @@ nav a {
 
 
 
-/* @media screen and (min-width:1920px){
-    .custom-dots {
-        text-align: center;
-        margin-top: 30px;
-        z-index: 9999;
-        position: absolute;
-    }
-
-    .custom-dots .dot {
-        height: 10px;
-
-    }
-} */
-
-/* @media screen and (min-width:2560px){
-    .custom-dots {
-        text-align: center;
-        margin-top: -50px;
-        z-index: 9999;
-        position: absolute;
-    }
-
-    .custom-dots .dot {
-        height: 14px;
-
-    }
-} */
 
 
 .custom-dots .dot.active {
@@ -414,108 +340,6 @@ nav a {
 }
 
 
-/* @media screen and (min-width:1920px) {
-
-    
-
-    .Old-text {
-        position: absolute;
-        margin-top: -43.956vh;
-        color: white;
-        margin-left: 1080px;
-        font-size: 32px;
-        font-family: titoli;
-
-    }
-
-    .old-desc {
-        position: absolute;
-        margin-top: -350px;
-        color: white;
-        margin-left: 1080px;
-        font-family: paragrafo;
-        font-size: 16px;
-        max-width: 80ch; 
-    }
-
-
-    .dragon-text {
-        position: absolute;
-        margin-top: -200px;
-        color: white;
-        margin-left: 1000px;
-        font-size: 30px;
-        font-family: titoli;
-    
-    }
-    
-    .dragon-desc {
-        position: relative;
-        margin-top: -150px;
-        color: white;
-        margin-left: 1000px;
-        font-family: paragrafo;
-        font-size: 14px;
-    
-    }
-
-
-} */
-
-/* @media screen and (min-width:2560px) {
-
-
-
-    .Old-text {
-        position: absolute;
-        margin-top: -620px;
-        color: white;
-        margin-left: 1520px;
-        font-size: 40px;
-        font-family: titoli;
-
-    }
-
-    .old-desc {
-        position: absolute;
-        margin-top: -550px;
-        color: white;
-        margin-left: 1520px;
-        font-family: paragrafo;
-        font-size: 20px;
-
-    }
-
-
-
-    .dragon-text {
-        position: absolute;
-        margin-top: -400px;
-        color: white;
-        margin-left: 1500px;
-        font-size: 30px;
-        font-family: titoli;
-    
-    }
-    
-    .dragon-desc {
-        position: relative;
-        margin-top: -350px;
-        color: white;
-        margin-left: 1500px;
-        font-family: paragrafo;
-        font-size: 14px;
-    
-    }
-
-
-    .custom-dots .dot{
-        margin-top: 100px;
-    }
-} */
-
-
-/*-----------------------------------------*/
 /*-------------SLIDE RESPONSIVE------------*/
 
 @media screen and (max-width: 600px) {
@@ -645,33 +469,3 @@ nav a {
 }
 
 /*---CSS TABLET--*/
-/* @media screen and (max-width: 1366px) {
-
-    .global {
-        overflow-y: hidden;
-    }
-
-
-    .amosShade {
-        height: 600px;
-        width: auto;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .introPayOff {
-        font-size: 16px;
-        opacity: 0;
-        position: absolute;
-        color: white;
-        font-family: payoff;
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 700px;
-    }
-
-} */

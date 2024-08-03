@@ -101,4 +101,8 @@ body {
         width: 50%;
         font-size: 4vw;
     }
+
+    .header-blur{
+        border: none;
+    }
 }

@@ -18,6 +18,10 @@
 
 .sidenav.open {
     width: 250px;
+    border: solid 1px white;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
 
 .sidenav a {
@@ -55,7 +59,8 @@
     .logomenu {
         width: 20vw;
         display: block;
-        margin-top: -1vw;
+        margin-top: -4vw;
+        margin-left: -5vw;
     }
 
     .menu-btn {
