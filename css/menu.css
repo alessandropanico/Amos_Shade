@@ -1,8 +1,4 @@
 /* CSS per il menu laterale e pulsante */
-.logomenu{
-    display: none;
-}
-
 .menu-btn {
     display: none;
 }
@@ -21,12 +17,17 @@
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #ffffff;
-    display: block;
+    display: flex; /* Usa il layout flex per allineare le icone e il testo */
+    align-items: center; /* Allinea verticalmente le icone e il testo */
     transition: 0.3s;
+}
+
+.sidenav a i {
+    margin-right: 15px; /* Spazio tra l'icona e il testo */
 }
 
 .sidenav a:hover {
@@ -43,8 +44,6 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
-
-    
     .logo {
         display: none;
     }
@@ -54,7 +53,6 @@
         display: block;
         margin-top: -1vw;
     }
-
 
     .menu-btn {
         display: block;
