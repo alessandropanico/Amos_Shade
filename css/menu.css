@@ -16,18 +16,22 @@
     z-index: 1001;
 }
 
+.sidenav.open {
+    width: 250px;
+}
+
 .sidenav a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 22px;
     color: #ffffff;
-    display: flex; /* Usa il layout flex per allineare le icone e il testo */
-    align-items: center; /* Allinea verticalmente le icone e il testo */
+    display: flex;
+    align-items: center;
     transition: 0.3s;
 }
 
 .sidenav a i {
-    margin-right: 15px; /* Spazio tra l'icona e il testo */
+    margin-right: 15px;
 }
 
 .sidenav a:hover {
@@ -48,7 +52,7 @@
         display: none;
     }
 
-    .logomenu{
+    .logomenu {
         width: 20vw;
         display: block;
         margin-top: -1vw;
@@ -58,13 +62,13 @@
         display: block;
         position: fixed;
         top: 20px;
-        left: 20px; /* Posiziona il pulsante a sinistra */
+        left: 20px;
         background: none;
         border: none;
         font-size: 30px;
         color: white;
         cursor: pointer;
-        z-index: 1002; /* Assicurati che il pulsante sia sopra il menu laterale */
+        z-index: 1002;
     }
 
     .oid {
