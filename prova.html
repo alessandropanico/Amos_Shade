@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amos Shade</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../ImmaginiUfficiali/star.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles2.css">
+    <link rel="stylesheet" href="../css/contatti.css">
+
+    <!-- Font Awesome Kit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header-blur">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="../ImmaginiUfficiali/OID.png" class="oid" alt="OldIronDeath">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <a href="../index.html"><img src="../ImmaginiUfficiali/star.png" class="logo" alt="Logo"></a>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <ul class="myNav d-flex align-items-center list-unstyled m-0">
+                    <li class="me-3"><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube" style="color: #ffffff;"></i></a></li>
+                    <li class="me-3"><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter" style="color: #ffffff;"></i></a></li>
+                    <li class="me-3"><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
+                    <li><a class="contact" href="contatti.html" style="color: #ffffff;">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-flex justify-content-center" style="margin-top: 100px;">
+        <section class="sectionForm">
+            <!--CONTACT US-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="titolo">CONTACT US</div>
+                        </div>
+                        <div class="descrizione">
+                            <p>If you have any questions, suggestions, or simply want to get in touch with the Amos Shade team, don't hesitate to contact us! We're here to help. You can email us at communication.team@oldirondeath.com or fill out the contact form below. We'll be happy to address all your inquiries as soon as possible. Thank you for your interest and for being part of our community!</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="mail">COMMUNICATION.TEAM@OLDIRONDEATH.COM</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="container">
+                            <form id="amosForm">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="oggetto" class="form-label">Object</label>
+                                    <input type="text" class="form-control" id="oggetto" name="oggetto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messaggio" class="form-label">Message</label>
+                                    <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
+                                </div>
+                                <button id="inviaButtonEM" type="submit" class="myButton">SEND</button>
+                            </form>
+                            <div id="aziendaMessage" class="mt-3" style="color:white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/lib.js"></script>
+    <script src="../js/email.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../js/menuMobile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: paragrafo;
+    src: url("../FONT/Prompt-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: titoli;
+    src: url("../FONT/Syncopate-Regular.ttf");
+}
+
+@font-face {
+    font-family: payoff;
+    src: url("../FONT/Michroma-Regular.ttf");
+}
+
+body {
+    background-color: black;
+    z-index: -1;
+}
+
+.header-blur {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid white;
+    top: 0;
+}
+
+.oid {
+    width:  15.625vw; /* Ridotto da 15.625vw per stringere */
+}
+
+.logo {
+    width: 4.557vw; /* Ridotto da 4.557vw per stringere */
+}
+
+.myNav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.302vw; /* Ridotto da 1.302vw per stringere */
+}
+
+.myButton {
+    background-color: transparent;
+    border: solid 1px white;
+    width: 19.531vw;
+    height: 6.853vh;
+    font-family: titoli;
+    font-size: 1.042vw;
+    color: white;
+    border-radius: 1.953vw;
+    text-align: center;
+    align-items: center;
+}
+
+.contact {
+    font-family: titoli;
+    margin-top: 0px;
+}
+
+.sectionForm {
+    color: white;
+}
+
+.titolo {
+    font-family: titoli;
+    font-size: 2vw;
+}
+
+.descrizione p {
+    font-family: paragrafo;
+}
+
+.mail {
+    font-family: payoff;
+    font-size: 1.5vw;
+}
+
+.spazio {
+    width: 80%;
+    background-color: red;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .oid {
+        width: 30%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .myNav a {
+        font-size: 3vw;
+    }
+
+    .myButton {
+        width: 50%;
+        font-size: 4vw;
+    }
+}
