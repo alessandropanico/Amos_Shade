@@ -131,7 +131,7 @@
     text-align: center;
     /* Allinea i punti di navigazione al centro */
     /* Spazio sopra i punti di navigazione */
-    z-index: 9999;
+    z-index: 9990;
     position: absolute;
     margin-top: -3.255vw;
 }
