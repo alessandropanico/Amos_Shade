@@ -12,7 +12,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 10vh;
     z-index: 9999;
 
 
@@ -27,9 +27,9 @@
 }
 
 .sidenav a {
-    padding: 10px 15px;
+    padding: 5.415vw 2.623vw;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 5.314vw;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .sidenav a i {
-    margin-right: 15px;
+    margin-right: 3.623vw;
 }
 
 .sidenav a:hover {
