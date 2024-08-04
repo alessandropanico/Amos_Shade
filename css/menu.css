@@ -13,11 +13,11 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    z-index: 1001;
+    z-index: 9999;
 }
 
 .sidenav.open {
-    width: 250px;
+    width: 60.386vw;
     border: solid 1px white;
     border-left: none;
     border-top: none;

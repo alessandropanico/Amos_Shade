@@ -42,10 +42,9 @@
 
 
 
-
 .myButton {
     background-color: transparent;
-    border: solid 1px white;
+    border: solid 0.052vw white;
     width: 19.531vw;
     height: 6.853vh;
     font-family: titoli;
@@ -79,28 +78,6 @@ body {
 
 
 
-
-
-
-
-
-@media screen and (width:2560px){
-    .oid {
-       margin-left: -15.625vw;
-    }
-
-    .myNav{
-        margin-right: -14vw;
-    }
-
-
-}
-
-
-
-
-
-
 /*-------SLIDER-------*/
 
 .slider {
@@ -111,11 +88,6 @@ body {
     text-decoration: none;
 
 }
-
-.slide1 {}
-
-
-
 
 
 .sectionSlider {
@@ -141,7 +113,7 @@ body {
     transform: translateY(-50%);
     font-size: 1.953vw;
     color: white;
-    padding: 10px;
+    padding: 0.521vw;
     cursor: pointer;
     z-index: 1;
     /* Aggiunto z-index */
@@ -172,7 +144,7 @@ body {
     height: 0.7vw;
     /* Regola l'altezza dei punti */
     width: 0.651vw;
-    margin: 15px;
+    margin: 0.781vw;
     border-radius: 100%;
     /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
     background-color: #424242;
@@ -184,12 +156,8 @@ body {
 
 
 
-
-
 .custom-dots .dot.active {
     background-color: #ffffff;
-
-
 }
 
 /*--------TEXT SLIDE--------*/
@@ -201,8 +169,8 @@ body {
     margin-left: 58vw;
     font-size: 1.953vw;
     font-family: titoli;
-
 }
+
 
 .old-desc {
     position: relative;
@@ -211,8 +179,8 @@ body {
     margin-left: 58vw;
     font-family: paragrafo;
     font-size: 0.781vw;
-
 }
+
 
 .dragon-text {
     position: absolute;
@@ -221,8 +189,8 @@ body {
     margin-left: 58vw;
     font-size: 1.953vw;
     font-family: titoli;
-
 }
+
 
 .dragon-desc {
     position: relative;
@@ -234,6 +202,8 @@ body {
 
 }
 
+
+/*----------------------------------------*/
 
 
 @media screen and (max-width: 600px) {
@@ -250,51 +220,21 @@ body {
 
 }
 
-
 /*-------------SLIDE RESPONSIVE------------*/
 
 @media screen and (max-width: 600px) {
 
     .prev,
     .next {
-        font-size: 10px;
+        font-size: 2.415vw;
         /* Riduci la dimensione delle frecce */
     }
 
     .custom-dots {
-        margin-top: 10px;
+        margin-top: 1.16vh;
         /* Riduci lo spazio sopra i punti di navigazione */
     }
-
-
 }
-
-
-
-/*--------------------------------------*/
-/*--------------MENU RESPONSIVE----------------*/
-
-
-@media screen and (max-width: 600px) {
-    #desktop {
-        display: none;
-    }
-
-
-}
-
-
-
-.mobile-menu.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 1;
-    /* Quando il menu è attivo, imposta l'opacità a 1 */
-}
-
-
-
 
 
 
@@ -306,7 +246,7 @@ body {
 
 
     .amosShade {
-        height: 350px;
+        height: 84.541vw;
         /* Altezza desiderata */
         width: auto;
         position: absolute;
@@ -320,7 +260,7 @@ body {
 
 
     .introPayOff {
-        font-size: 16px;
+        font-size: 3vw;
         opacity: 0;
         position: absolute;
         color: white;
@@ -328,9 +268,9 @@ body {
         text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 380px;
+        margin-top: 53vh;
+        
     }
 
 }
 
-/*---CSS TABLET--*/
