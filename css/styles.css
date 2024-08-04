@@ -18,6 +18,8 @@
 
 .body{
     overflow: hidden;
+    background-color: black;
+    z-index: -1;
 }
 
 .amosShade {
@@ -29,7 +31,6 @@
     transform: translate(-50%, -50%);
 }
 
-
 .introPayOff {
     font-size: 0.8vw;
     opacity: 0;
@@ -39,7 +40,6 @@
     text-align: center;
     margin-top: 50.713vh;
 }
-
 
 
 .myButton {
@@ -71,10 +71,7 @@
     /* Imposta l'opacità iniziale a 0 */
 }
 
-body {
-    background-color: black;
-    z-index: -1;
-}
+
 
 
 
@@ -270,6 +267,18 @@ body {
         transform: translate(-50%, -50%);
         margin-top: 53vh;
         
+    }
+
+    .myButton {
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 42.531vw;
+        height: 5.853vh;
+        font-family: titoli;
+        font-size: 6.042vw;
+        color: white;
+        border-radius: 9.953vw;
+        text-align: center;
     }
 
 }

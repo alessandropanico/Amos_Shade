@@ -11,27 +11,10 @@
     font-size: 1vw;
 }
 
-.titolo2 {
-    font-family: payoff;
-    color: white;
-    font-size: 1.953vw;
 
+.form-label {
+    margin-bottom: 0rem;
 }
-
-@media screen and (width:2560px) {
-    .titolo2 {
-        font-size: 1.5vw;
-
-    }
-
-    
-    .row{
-        justify-content: center;
-    }
-
-
-}
-
 
 .descrizione {
     text-align: center;
@@ -47,7 +30,7 @@ label {
 }
 
 .sectionForm {
-    margin-top: 10vw;
+    margin-top: 7vw;
 }
 
 #amosForm {
@@ -89,49 +72,34 @@ input {
 }
 
 
-@media screen and (width:1920px) {
+@media screen and (max-width:600px){
 
-    .col-md-6 {
-        width: 58.594vw;
+    .sectionForm{
+        margin-top: 13vh;
     }
 
-    .sectionForm {
-        margin-top: 8vw;
-    }
-
-    .row{
-        justify-content: center;
-    }
-
-    #amosForm{
-        margin-top: 2vh;
-    }
-    
-    
-}
-
-
-@media screen and (width:2560px) {
-
-    .col-md-6 {
-        width: 58.594vw;
-    }
-
-    .descrizione {
+    .titolo{
+        font-size: 6vw;
         text-align: center;
-        color: white;
-        /* word-break: break-all;
-        max-width: 50ch;  */
-        font-family: paragrafo;
-        font-size: 1.5vw;
     }
 
-    .form-label{
-        font-size: 1vw;
+    .col-md-6 {
+        width: 100%;
     }
 
-    #amosForm{
-        margin-top: 2vh;
+    .descrizione{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .mail{
+        font-size: 2.7vw;
+        text-align: center;
     }
 
 }
+
+
+
+
+

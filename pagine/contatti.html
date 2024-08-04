@@ -18,7 +18,9 @@
     <link rel="icon" type="image/png" href="../ImmaginiUfficiali/star.png">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/contatti.css">
 
 
@@ -30,127 +32,119 @@
 <body>
 
     <div id="navbar">
-        <nav id="desktop">
-            <div class="container">
-                <!-- <div class="d-flex justify-content-start align-self: center" id="amos">
-                    AMOS SHADE
-                </div> -->
 
-                <div class="d-flex justify-content-start align-self: center">
-                    <img src="../ImmaginiUfficiali/OID.png" class="oid">
+        <header class="header-blur">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <button class="menu-btn d-md-none" onclick="openNav()">
+                        <img src="../ImmaginiUfficiali/star.png" class="logomenu"></button>
+                    <img src="../ImmaginiUfficiali/OID.png" class="oid" alt="OldIronDeath">
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <a href="../index.html"><img src="../ImmaginiUfficiali/star.png" class="logo"></a>
+                    <a href="../index.html"><img src="../ImmaginiUfficiali/star.png" class="logo" alt="Logo"></a>
                 </div>
 
-                <div class="d-flex justify-content-end">
-                    <ul class="myNav">
-                        <li><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube" style="color: #ffffff;"></i></a>
-                        </li>
-                        <li><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter" style="color: #ffffff;"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram icon"
+                <div class="d-flex align-items-center d-none d-md-flex">
+                    <ul class="myNav d-flex align-items-center list-unstyled m-0">
+                        <li class="me-3"><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube"
                                     style="color: #ffffff;"></i></a></li>
-                        <li><a class="contact" href="contatti.html">CONTACT</a></li>
+                        <li class="me-3"><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li class="me-3"><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li><a class="contact" href="contatti.html" style="color: #ffffff;">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="navmobile">
-            <div class="container">
-                <div class="d-flex justify-content-center">
-                    <div class="menu-toggle">
-                        <!-- <div class="hamburger"></div>
-                        <div class="hamburger"></div>
-                        <div class="hamburger"></div> -->
-                        <img src="../ImmaginiUfficiali/star.png" class="logoMobile">
-                    </div>
-                </div>
 
-                <div class="d-flex justify-content-center">
-                    <ul class="mobile-menu">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="contatti.html">CONTACT</a></li>
-                        <li><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube "
-                                    style="color: #ffffff;"></i></a></li>
-                        <li><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter "
-                                    style="color: #ffffff;"></i></a></li>
-                        <li><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram icon "
-                                    style="color: #ffffff;"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
+        <!-- Side Navigation Menu -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html"><i class="fas fa-home"></i><span class="contact">HOME</span></a>
+            <a href="contatti.html"><i class="fas fa-envelope"></i><span class="contact">CONTACT</span></a>
+            <a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube"></i><span
+                    class="contact">YOUTUBE</span></a>
+            <a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter"></i><span
+                    class="contact">TWITTER</span></a>
+            <a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram"></i><span
+                    class="contact">INSTAGRAM</span></a>
         </div>
+
+
     </div>
 
 
+
     <div class="d-flex justify-content-center">
-    <section class="sectionForm">
+        <section class="sectionForm">
 
-        <!--CONTACT US-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-center">
-                        <div class="titolo">CONTACT US</div>
+            <!--CONTACT US-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="titolo">CONTACT US</div>
+                        </div>
+
+                        <div class="descrizione">
+
+                            <p>If you have any questions, suggestions, or simply want to get in touch with the Amos
+                                Shade
+                                team, don't hesitate to contact us! We're here to help. You can email us at
+                                communication.team@oldirondeath.com or fill out the contact form below. We'll be happy
+                                to
+                                address all your inquiries as soon as possible. Thank you for your interest and for
+                                being
+                                part of our community!</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="mail">COMMUNICATION.TEAM@OLDIRONDEATH.COM</div>
+                        </div>
+
                     </div>
-                    
-                    <div class="descrizione">
 
-                        <p>If you have any questions, suggestions, or simply want to get in touch with the Amos Shade
-                            team, don't hesitate to contact us! We're here to help. You can email us at
-                            communication.team@oldirondeath.com or fill out the contact form below. We'll be happy to
-                            address all your inquiries as soon as possible. Thank you for your interest and for being
-                            part of our community!</p>
-                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <form id="amosForm">
 
-                    <div class="d-flex justify-content-center">
-                        <div class="mail">COMMUNICATION.TEAM@OLDIRONDEATH.COM</div>
-                    </div>
-
-                    <!-- <div class="d-flex justify-content-center">
-                        <div class="titolo2">Copyright</div>
-                    </div> -->
-
-                </div>
-
-                <div class="col-md-6">
-                    <div class="container">
-                        <form id="amosForm">
-                            <div class="mb-3">
+                                <div class="mt-2">
                                 <label for="nome" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="nome" name="nome" required>
-                            </div>
-                            <div class="mb-3">
+                                </div>
+
+                                <div class="mt-2">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
+                                </div>
+
+                                <div class="mt-2">
                                 <label for="oggetto" class="form-label">Object</label>
                                 <input type="text" class="form-control" id="oggetto" name="oggetto" required>
-                            </div>
-                            <div class="mb-3">
+                                </div>
+
+                                <div class="mt-2">
                                 <label for="messaggio" class="form-label">Message</label>
                                 <textarea class="form-control" id="messaggio" name="messaggio" rows="4"
                                     required></textarea>
-                            </div>
-                            <button id="inviaButtonEM" type="submit" class="myButton">SEND</button>
-                        </form>
+                                </div>
+                                <button id="inviaButtonEM" type="submit" class="myButton mt-3">SEND</button>
+                            </form>
 
-                        <div id="aziendaMessage" class="mt-3" style="color:white"></div>
+                            <div id="aziendaMessage" class="mt-3" style="color:white"></div>
+                        </div>
                     </div>
+
                 </div>
-
             </div>
-        </div>
 
-    </section>
-</div>
+        </section>
+    </div>
 
-    <script src="../js/lib.js"></script>
+    <script src="../js/menu.js"></script>
     <script src="../js/email.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="../js/menuMobile.js"></script>

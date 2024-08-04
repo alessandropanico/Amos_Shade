@@ -59,13 +59,13 @@
     .logomenu {
         width: 20vw;
         display: block;
-        margin-top: -4vw;
-        margin-left: -5vw;
+        margin-top: -3vw;
+        margin-left: -4vw;
         border: solid 1px;
         border-radius: 20px;
         backdrop-filter: blur(7px);
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 9999;
+        z-index: 1001;
         position: fixed;
     }
 
@@ -90,8 +90,5 @@
         font-size: 3vw;
     }
 
-    .myButton {
-        width: 50%;
-        font-size: 4vw;
-    }
+  
 }
