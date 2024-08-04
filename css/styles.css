@@ -77,56 +77,11 @@ body {
     z-index: -1;
 }
 
-/* Aggiunto stile per la navbar */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    z-index: 9999;
-    backdrop-filter: blur(7px);
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    height: 13.706vh;
-    border-bottom: solid 1px;
-    border-color: white;
-    display: flex;
-    z-index: 9999;
-
-}
 
 
-.logo {
-    width: 4.557vw;
-    position: absolute;
-    margin-top: -0.977vw;
-}
 
-.logoMobile {
-    width: 4.557vw;
-    display: flex;
 
-}
 
-#amos {
-    color: white;
-    position: relative;
-    font-size: 1.302vw;
-    top: 30px;
-    font-family: titoli;
-    /* Regola questa cifra in base alla quantità desiderata di spostamento verso il basso */
-}
-
-.oid {
-    width: 15.625vw;
-    position: absolute;
-    margin-top: -4.112vh;
-}
-
-.myNav{
-    margin-right: 7vw;
-}
 
 
 @media screen and (width:2560px){
@@ -141,52 +96,8 @@ nav {
 
 }
 
-@media screen and (width:1920px){
-    .oid {
-       margin-left: -10vw;
-    }
-
-    .myNav{
-        margin-right: -vw;
-    }
 
 
-}
-
-
-
-/* Modificato stile per i link nella navbar */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    /* Allinea gli elementi sulla navbar */
-    margin: 0;
-    padding: 0;
-    z-index: 9999;
-}
-
-nav li {
-    margin-right: 1.302vw;
-    display: block;
-
-}
-
-/* Modificato stile per i link nella navbar */
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.302vw;
-
-}
-
-
-.nav-container {
-    max-width: 78.125vw;
-    /* Scegli la larghezza massima desiderata */
-    margin: 0 auto;
-    /* Centra il container orizzontalmente */
-}
 
 
 
@@ -362,37 +273,17 @@ nav a {
 
 /*--------------------------------------*/
 /*--------------MENU RESPONSIVE----------------*/
-.navmobile {
-    display: none;
-}
+
 
 @media screen and (max-width: 600px) {
     #desktop {
         display: none;
     }
 
-    .navmobile {
-        display: block;
-    }
-}
-
-.mobile-menu {
-    display: none;
-    list-style-type: none;
-    opacity: 0;
-    /* Imposta l'opacità del menu a 0 */
-    transition: opacity 0.3s ease;
-    /* Aggiungi una transizione all'opacità */
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.785);
-    border-radius: 20px;
-    border: solid 2px;
-    border-color: white;
 
 }
+
+
 
 .mobile-menu.active {
     display: flex;
@@ -403,34 +294,8 @@ nav a {
 }
 
 
-.mobile-menu a {
-    font-family: titoli;
-    text-decoration: none;
-    color: white;
-}
-
-.menu-toggle {
-    cursor: pointer;
-    margin-top: 0px;
-}
-
-.hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 5px;
-}
 
 
-.mobile-menu li {
-    margin-bottom: 10px;
-}
-
-.contact {
-    font-family: titoli;
-    position: absolute;
-    margin-top: 0px;
-}
 
 
 @media screen and (max-width: 600px) {
