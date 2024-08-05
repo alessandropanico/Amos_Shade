@@ -125,6 +125,11 @@
     display: flex;
 }
 
+.cont2{
+    flex-direction: row;
+    display: flex;
+}
+
 @media screen and (max-width:600px) {
 
     .titolo {
@@ -174,6 +179,13 @@
     .cont {
         flex-direction: column;
         align-items: center;
+    }
+
+    .cont2 {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .descrizione2 {
