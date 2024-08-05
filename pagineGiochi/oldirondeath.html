@@ -15,6 +15,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/oldirondeath.css">
 
 
@@ -24,54 +26,49 @@
 </head>
 
 <body>
-    <nav id="desktop">
-        <div class="container">
+    <div id="navbar">
 
+        <header class="header-blur">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <button class="menu-btn d-md-none" onclick="openNav()">
+                        <img src="../ImmaginiUfficiali/star.png" class="logomenu"></button>
+                    <img src="../ImmaginiUfficiali/OID.png" class="oid" alt="OldIronDeath">
+                </div>
 
-            <div class="d-flex justify-content-start ">
-                <img src="../ImmaginiUfficiali/OID.png" class="oid">
-            </div>
+                <div class="d-flex justify-content-center">
+                    <a href="../index.html"><img src="../ImmaginiUfficiali/star.png" class="logo" alt="Logo"></a>
+                </div>
 
-            <div class="d-flex justify-content-center">
-                <a href="../index.html"><img src="../ImmaginiUfficiali/star.png" class="logo"></a>
-            </div>
-
-            <div class="d-flex justify-content-end">
-                <ul class="myNav">
-                    <li><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube" style="color: #ffffff;"></i></a>
-                    </li>
-                    <li><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter " style="color: #ffffff;"></i></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram icon"
-                                style="color: #ffffff;"></i></a></li>
-                    <li><a class="contact" href="../pagine/contatti.html">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="navmobile">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="menu-toggle">
-                    <img src="../ImmaginiUfficiali/star.png" class="logoMobile">
+                <div class="d-flex align-items-center d-none d-md-flex">
+                    <ul class="myNav d-flex align-items-center list-unstyled m-0">
+                        <li class="me-3"><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li class="me-3"><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li class="me-3"><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram"
+                                    style="color: #ffffff;"></i></a></li>
+                        <li><a class="contact" href="contatti.html" style="color: #ffffff;">CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
+        </header>
 
-            <div class="d-flex justify-content-center">
-                <ul class="mobile-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="./pagine/contatti.html">CONTACT</a></li>
-                    <li><a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube fa-2x"
-                                style="color: #ffffff;"></i></a></li>
-                    <li><a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter fa-2x"
-                                style="color: #ffffff;"></i></a></li>
-                    <li><a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram icon fa-2x"
-                                style="color: #ffffff;"></i></a></li>
-                </ul>
-            </div>
 
+        <!-- Side Navigation Menu -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html"><i class="fas fa-home"></i><span class="contact">HOME</span></a>
+            <a href="contatti.html"><i class="fas fa-envelope"></i><span class="contact">CONTACT</span></a>
+            <a href="https://www.youtube.com/@oldirondeath"><i class="fab fa-youtube"></i><span
+                    class="contact">YOUTUBE</span></a>
+            <a href="https://twitter.com/OldIronDeath"><i class="fab fa-twitter"></i><span
+                    class="contact">TWITTER</span></a>
+            <a href="https://www.instagram.com/oldirondeath"><i class="fab fa-instagram"></i><span
+                    class="contact">INSTAGRAM</span></a>
         </div>
+
+
     </div>
 
     <!--IMMAGINE DEL GIOCO-->
@@ -113,20 +110,24 @@
             <div class="p-3 flex-grow-1 myP">
                 <div class="titoloCol">
                     GAMEPLAY
-            </div>
-            <div class="">
-                <div class="glox">
-                    <div class="descrizione ">
-                        <p>Old Iron Death is a third-person linear action-adventure game. The gameplay is divided into
-                            two
-                            alternating parts: the first occurs during combat moments where the perspective will be more
-                            tactical, while during exploration sessions and motorcycle journeys along the map, you'll
-                            notice
-                            the other part of the "cinematic" gameplay, featuring a narrating voice that gives it a more
-                            "Cult" feel..</p>
+                </div>
+                <div class="">
+                    <div class="glox">
+                        <div class="descrizione ">
+                            <p>Old Iron Death is a third-person linear action-adventure game. The gameplay is divided
+                                into
+                                two
+                                alternating parts: the first occurs during combat moments where the perspective will be
+                                more
+                                tactical, while during exploration sessions and motorcycle journeys along the map,
+                                you'll
+                                notice
+                                the other part of the "cinematic" gameplay, featuring a narrating voice that gives it a
+                                more
+                                "Cult" feel..</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -194,19 +195,21 @@
         <div class="d-flex justify-content-end align-items-center">
             <div class="p-3 flex-grow-1 myS">
                 <div class="d-flex justify-content-center">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>The game difficulty in Old Iron Death is unique and realistic, varying based on the context.
-                            There's a high probability of success with a weak arsenal if there's ample space for
-                            movement
-                            and distance from enemies; otherwise, you'll need the right and powerful arsenal. The
-                            weather
-                            system in Old Iron Death is one of the elements that contributes to easing the gameplay
-                            (thanks
-                            to heavy rain, avalanches, fog, hurricanes, tornadoes, cyclones, geysers, sandstorms, and
-                            earthquakes).</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>The game difficulty in Old Iron Death is unique and realistic, varying based on the
+                                context.
+                                There's a high probability of success with a weak arsenal if there's ample space for
+                                movement
+                                and distance from enemies; otherwise, you'll need the right and powerful arsenal. The
+                                weather
+                                system in Old Iron Death is one of the elements that contributes to easing the gameplay
+                                (thanks
+                                to heavy rain, avalanches, fog, hurricanes, tornadoes, cyclones, geysers, sandstorms,
+                                and
+                                earthquakes).</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
@@ -225,22 +228,26 @@
                     THE STORY
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>Old Iron Death features two separate paths that attempt to intersect: the roads of Mitchell
-                            and
-                            Harper, a father and daughter searching for each other in a journey through the rubble of a
-                            post-apocalyptic scenario.
-                            The antagonist, Mitchell Westfield, is a man who is half human and half cyborg, a former
-                            Delta
-                            Force soldier remembered as "The Legend," now wanted worldwide.
-                            Nicole Harper Westfield is Legend's daughter, who, in her quest to find her father, faces
-                            all
-                            risks and fears: the RAW, military armies, cyborgs, and inner demons like loneliness,
-                            depression, and her lack of experience, which expose her to danger, all while dreaming every
-                            night of holding her parents' hands again.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>Old Iron Death features two separate paths that attempt to intersect: the roads of
+                                Mitchell
+                                and
+                                Harper, a father and daughter searching for each other in a journey through the rubble
+                                of a
+                                post-apocalyptic scenario.
+                                The antagonist, Mitchell Westfield, is a man who is half human and half cyborg, a former
+                                Delta
+                                Force soldier remembered as "The Legend," now wanted worldwide.
+                                Nicole Harper Westfield is Legend's daughter, who, in her quest to find her father,
+                                faces
+                                all
+                                risks and fears: the RAW, military armies, cyborgs, and inner demons like loneliness,
+                                depression, and her lack of experience, which expose her to danger, all while dreaming
+                                every
+                                night of holding her parents' hands again.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -255,19 +262,21 @@
                     LEGEND
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>Mitchell Jack Westfield, better known as "Legend," is a man who lost everything due to the
-                            Third
-                            World War. Helped by an armor housing an unknown person, he escapes from TDM's torture
-                            chambers
-                            and sets out to find his parents, children, and wife. With limbs replaced by cybernetic
-                            implants
-                            and in a lawless, devastated place, his only task to seek revenge and reclaim everything is
-                            to
-                            find his old war comrades and the deadliest weapons that Gadaara can offer.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>Mitchell Jack Westfield, better known as "Legend," is a man who lost everything due to
+                                the
+                                Third
+                                World War. Helped by an armor housing an unknown person, he escapes from TDM's torture
+                                chambers
+                                and sets out to find his parents, children, and wife. With limbs replaced by cybernetic
+                                implants
+                                and in a lawless, devastated place, his only task to seek revenge and reclaim everything
+                                is
+                                to
+                                find his old war comrades and the deadliest weapons that Gadaara can offer.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
@@ -286,31 +295,38 @@
                     IRON DEATH AND RAW
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>"Iron Death" is the term used to refer to all cybernetic implants and exoskeletons present in
-                            the
-                            game. Unlike other games, the functionality of these implants goes beyond aesthetics and
-                            their
-                            role in the scenario. Iron Deaths are "living" machines that connect to the wearer, merging
-                            spirit and body, making the "pilot" as physically strong as their spirituality. The drawback
-                            is
-                            that if the pilot has a downtrodden or weak spirit, it will affect their body. Too much
-                            "sin"
-                            and pain in the pilot can lead to crying, seizures, weakness, ulcers, auditory and visual
-                            hallucinations, and even death.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>"Iron Death" is the term used to refer to all cybernetic implants and exoskeletons
+                                present in
+                                the
+                                game. Unlike other games, the functionality of these implants goes beyond aesthetics and
+                                their
+                                role in the scenario. Iron Deaths are "living" machines that connect to the wearer,
+                                merging
+                                spirit and body, making the "pilot" as physically strong as their spirituality. The
+                                drawback
+                                is
+                                that if the pilot has a downtrodden or weak spirit, it will affect their body. Too much
+                                "sin"
+                                and pain in the pilot can lead to crying, seizures, weakness, ulcers, auditory and
+                                visual
+                                hallucinations, and even death.</p>
 
-                        <p>In this case, the Iron Death continues to move and be controlled by the spirit of the pilot,
-                            now
-                            turned into a demon that possesses the Iron Death and remains trapped in a limbo called the
-                            "furrow": a spiritual place accessible at any time by the pilots, where they can see the
-                            most
-                            sensitive and good part of themselves fighting against their evil side. The "moving corpses"
-                            controlled by the Iron Death and the pilots nearing death are called R.A.W. (Resurrected
-                            Abyssal
-                            Wanderer).</p>
+                            <p>In this case, the Iron Death continues to move and be controlled by the spirit of the
+                                pilot,
+                                now
+                                turned into a demon that possesses the Iron Death and remains trapped in a limbo called
+                                the
+                                "furrow": a spiritual place accessible at any time by the pilots, where they can see the
+                                most
+                                sensitive and good part of themselves fighting against their evil side. The "moving
+                                corpses"
+                                controlled by the Iron Death and the pilots nearing death are called R.A.W. (Resurrected
+                                Abyssal
+                                Wanderer).</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -325,27 +341,31 @@
                     GADAARA
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>What was once called Hong Kong is now a place of destruction, depicted in the game as a
-                            metaphor
-                            for the human heart. You'll find yourself fleeing from the TDM as you walk through the ruins
-                            of
-                            your heart, encountering enemies that represent your fears and inner demons. In Old Iron
-                            Death,
-                            Legend begins his journey in the desolate lands of Gadaara to find his family, only to
-                            realize
-                            that even in the greatest problem, there will always be those few friends who believe in
-                            you,
-                            they just need to be found. All this is portrayed with cinematic quality in lighting, visual
-                            post-processing, screenplay, and narration.
-                            The explosion of an unknown device has brought the constant presence of a gigantic atomic
-                            fungus
-                            at ground zero, within which lies "the abyss": a place where no one has ever been able to
-                            reach
-                            due to atmospheric pressure and heavy radiation presence.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>What was once called Hong Kong is now a place of destruction, depicted in the game as a
+                                metaphor
+                                for the human heart. You'll find yourself fleeing from the TDM as you walk through the
+                                ruins
+                                of
+                                your heart, encountering enemies that represent your fears and inner demons. In Old Iron
+                                Death,
+                                Legend begins his journey in the desolate lands of Gadaara to find his family, only to
+                                realize
+                                that even in the greatest problem, there will always be those few friends who believe in
+                                you,
+                                they just need to be found. All this is portrayed with cinematic quality in lighting,
+                                visual
+                                post-processing, screenplay, and narration.
+                                The explosion of an unknown device has brought the constant presence of a gigantic
+                                atomic
+                                fungus
+                                at ground zero, within which lies "the abyss": a place where no one has ever been able
+                                to
+                                reach
+                                due to atmospheric pressure and heavy radiation presence.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
@@ -364,18 +384,21 @@
                     THE GAME DESIGNER
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>The entire game is being developed by Luca Ryan Austro, born in 1997 and raised in Naples. He
-                            graduated from the Academy of Fine Arts in Naples in 2020 and began working as a graphic
-                            designer in various places. After developing video games for two Japanese companies in 2023,
-                            he
-                            decided to leave his job to fully dedicate himself to creating the masterpiece of his life:
-                            OLD
-                            IRON DEATH.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>The entire game is being developed by Luca Ryan Austro, born in 1997 and raised in
+                                Naples. He
+                                graduated from the Academy of Fine Arts in Naples in 2020 and began working as a graphic
+                                designer in various places. After developing video games for two Japanese companies in
+                                2023,
+                                he
+                                decided to leave his job to fully dedicate himself to creating the masterpiece of his
+                                life:
+                                OLD
+                                IRON DEATH.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -391,17 +414,19 @@
                     INSPIRATION
                 </div>
                 <div class="">
-                <div class="glox">
-                    <div class="descrizione">
-                        <p>Old Iron Death is built upon the influences of a vast cultural cinematic background and is
-                            what
-                            Metal Gear Solid: The Phantom Pain's plot was supposed to be. The game draws inspiration
-                            from
-                            the content of Cyberpunk, the mood of the manga Berserk, the setting of The Last Of Us, and
-                            the
-                            fluidity, speed, and enjoyment of Call of Duty.</p>
+                    <div class="glox">
+                        <div class="descrizione">
+                            <p>Old Iron Death is built upon the influences of a vast cultural cinematic background and
+                                is
+                                what
+                                Metal Gear Solid: The Phantom Pain's plot was supposed to be. The game draws inspiration
+                                from
+                                the content of Cyberpunk, the mood of the manga Berserk, the setting of The Last Of Us,
+                                and
+                                the
+                                fluidity, speed, and enjoyment of Call of Duty.</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
