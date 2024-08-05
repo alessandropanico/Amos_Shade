@@ -19,11 +19,13 @@
 
 /* Personalizzazione del container */
 .custom-container {
-    max-width:  71.615vw; /* Larghezza massima del container personalizzato */
-    margin: 0 auto; /* Centratura del container */
+    max-width: 71.615vw;
+    /* Larghezza massima del container personalizzato */
+    margin: 0 auto;
+    /* Centratura del container */
 }
 
-.icona{
+.icona {
     /* width: 9.766vw; */
     width: 5vw;
     align-items: center;
@@ -39,12 +41,10 @@
 
 }
 
-.box{
-    background-color: red;
+.box {
     width: 48.828vw;
     height: 60vh;
     flex: 0 0 auto;
-
 }
 
 .titoloCol {
@@ -55,7 +55,7 @@
     margin-left: 4.8vw;
 }
 
-.glox{
+.glox {
     max-width: 40vw;
 }
 
@@ -67,7 +67,6 @@
     font-family: paragrafo;
     font-size: 1.042vw;
     margin-left: 4.8vw;
-
 }
 
 .descrizione2 {
@@ -86,7 +85,7 @@
 
 }
 
-.carta{
+.carta {
     background-color: red;
     width: 9.766vw;
     height: 27.412vh;
@@ -95,28 +94,139 @@
 }
 
 /*CONTAINER 2 PERSONALIZZATO*/
- .custom-container2 {
+.custom-container2 {
     /* max-width: 84.635vw;  */
-    max-width: 50vw; 
+    max-width: 50vw;
     margin: 0 auto;
-     
-} 
 
-.myP{
+}
+
+.myP {
     /* margin-left: 6.51vw; */
     align-self: center;
 }
 
 
-.myS{
+.myS {
     /* margin-left: 6.51vw; */
     align-self: center;
 }
 
-.space100{
+.space100 {
     margin-top: 13.706vh;
 }
 
-.space200{
+.space200 {
     margin-top: 27.412vh;
+}
+
+.cont {
+    display: flex;
+}
+
+@media screen and (max-width:600px) {
+
+    .titolo {
+        color: white;
+        font-size: 6.953vw;
+        font-family: titoli;
+        text-align: center;
+    }
+
+    .trailer {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .descrizione3 {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 4.042vw;
+    }
+
+    .box {
+        width: 95%;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .titoloCol {
+        color: white;
+        font-size: 6.953vw;
+        text-align: center;
+        font-family: titoli;
+    }
+
+    .glox {
+        max-width: 100%;
+    }
+
+    .descrizione {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 4.042vw;
+        margin-left: 4.8vw;
+    }
+
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descrizione2 {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 4.042vw;
+    }
+
+
+    .space200{
+        margin-top: 10vh;
+    }
+       
+    .space100{
+        margin-top: 5vh;
+    }
+
+    .custom-container2 {
+        max-width: 90vw; 
+    }
+
+    .row-cols {
+        flex: 0 0 auto;
+        width: -1% !important;
+    }
+
+    .row-cols-2 {
+        flex: 0 0 auto;
+        width: -1% !important;
+    }
+
+    .icona {
+        /* width: 9.766vw; */
+        width: 12vw;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3vh;
+    }
+
+
+    .titolo2 {
+        color: white;
+        font-size: 2.8vw;
+        font-family: titoli;
+    }
+
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    align-items: center;
+    justify-content: center;
+    }
 }
