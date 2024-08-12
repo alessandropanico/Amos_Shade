@@ -94,16 +94,32 @@
     margin: 0 auto;
 }
 
-.immagineSlide {
+.slide1 {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* Assicura che l'altezza minima sia quella del viewport */
+    overflow: hidden; /* Evita overflow */
 }
 
-.boxOld{
+.immagineSlide {
     position: absolute;
-    margin-top: 2vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Riempie l'area, tagliando l'immagine se necessario per mantenere le proporzioni */
 }
 
+.boxOld {
+    position: absolute;
+    bottom: -6%;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 1vw;
+    text-align: left;
+    color: white;
+}
 .boxDragon{
     position: absolute;
     margin-top: -4vh;
@@ -219,10 +235,7 @@
         display: none;
     }
 
-    .immagineSlide {
-        height: auto;
-        width: 100vw;
-    }
+  
 
 }
 
