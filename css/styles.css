@@ -53,6 +53,7 @@
     border-radius: 1.953vw;
     text-align: center;
     align-items: center;
+    padding: 0.521vw;
 }
 
 .hidden {
@@ -237,8 +238,19 @@
         display: none;
     }
 
-  
+    .boxDragon {
+        display: none;
 
+    }
+  
+    .boxDragon{
+        display: none;
+
+    }
+
+    .Old-text{
+        display: none;
+    }
 }
 
 /*-------------SLIDE RESPONSIVE------------*/
@@ -303,6 +315,8 @@
         color: white;
         border-radius: 9.953vw;
         text-align: center;
+        padding: 0px;
+
     }
 
 }
