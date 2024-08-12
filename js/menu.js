@@ -1,6 +1,8 @@
 //250px
 function openNav() {
     document.getElementById("mySidenav").style.width = "60.386vw";
+    document.getElementById("mySidenav").style.height = "100%";
+
 }
 
 function closeNav() {

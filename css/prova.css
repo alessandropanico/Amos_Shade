@@ -1,0 +1,36 @@
+.amosShade {
+    height: 39.063vw;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introPayOff {
+    font-size: 0.8vw;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    color: white;
+    font-family: payoff;
+    text-align: center;
+ 
+}
+
+/*------------------------*/
+@font-face {
+    font-family: paragrafo;
+    src: url("../FONT/Prompt-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: titoli;
+    src: url("../FONT/Syncopate-Regular.ttf");
+}
+
+@font-face {
+    font-family: payoff;
+    src: url("../FONT/Michroma-Regular.ttf");
+}
