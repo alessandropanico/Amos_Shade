@@ -262,13 +262,25 @@ body{
 
     .prev,
     .next {
-        font-size: 2.415vw;
-        /* Riduci la dimensione delle frecce */
+        font-size: 8vw;
+        color: white;
     }
 
     .custom-dots {
-        margin-top: 1.16vh;
+        margin-top: -3.84vh
         /* Riduci lo spazio sopra i punti di navigazione */
+    }
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 2.7vw;
+        width: 1vw;
+        margin: 1.781vw;
+        border-radius: 100%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 }
 
