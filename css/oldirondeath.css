@@ -294,7 +294,65 @@
         justify-content: center;
     }
 
-   
+   /*------*/
+   .descrizione3 {
+    text-align: center;
+    color: white;
+    font-family: paragrafo;
+    font-size: 2.042vw;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .box2 {
+        width: 90%;
+        height: auto;
+        flex: 0 0 auto;
+        margin-left: 0vw;
+    }
+
+    .glox {
+        max-width: 100%;
+    }
+
+    .titoloCol {
+        color: white;
+        font-size: 4.953vw;
+        text-align: center;
+        font-family: titoli;
+        margin-left: 4.8vw;
+    }
+
+    .descrizione {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 3vw;
+        margin-left: 0vw;
+    }
+
+    .descrizione2 {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 3vw;
+    }
+
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont2 {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 
