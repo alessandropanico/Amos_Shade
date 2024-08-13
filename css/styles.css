@@ -16,9 +16,9 @@
 
 /*------------------------*/
 
-.body{
+body{
     overflow-y: scroll;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     z-index: -1;
 }
 
@@ -75,6 +75,8 @@
 
 .slider {
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
 .slider a {
@@ -84,19 +86,22 @@
 
 
 .sectionSlider {
-    margin-top: 0vh
+    height: 100vh; /* Imposta l'altezza della sezione slider per coprire l'intero viewport */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .slider {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .slide1, .slide2, .slide3 {
-    position: relative; /* Assicura che l'immagine assoluta sia contenuta */
+    position: relative;
     width: 100%;
-    height: 100vh; /* Imposta l'altezza dell'intero viewport */
+    height: 100vh; /* Occupa l'intera altezza del viewport */
 }
 
 
@@ -105,7 +110,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover; /* Riempie l'area del contenitore mantenendo le proporzioni */
     object-position: center; /* Centra l'immagine all'interno del contenitore */
 }
@@ -120,6 +125,7 @@
     text-align: left;
     color: white;
 }
+
 .boxDragon{
     position: absolute;
     margin-top: -4vh;
