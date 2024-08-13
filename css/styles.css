@@ -16,7 +16,7 @@
 
 /*------------------------*/
 
-body{
+body {
     overflow-y: scroll;
     background-color: rgb(0, 0, 0);
     z-index: -1;
@@ -86,7 +86,8 @@ body{
 
 
 .sectionSlider {
-    height: 100vh; /* Imposta l'altezza della sezione slider per coprire l'intero viewport */
+    height: 100vh;
+    /* Imposta l'altezza della sezione slider per coprire l'intero viewport */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -98,10 +99,13 @@ body{
     height: 100%;
 }
 
-.slide1, .slide2, .slide3 {
+.slide1,
+.slide2,
+.slide3 {
     position: relative;
     width: 100%;
-    height: 100vh; /* Occupa l'intera altezza del viewport */
+    height: 100vh;
+    /* Occupa l'intera altezza del viewport */
 }
 
 
@@ -111,8 +115,10 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Riempie l'area del contenitore mantenendo le proporzioni */
-    object-position: center; /* Centra l'immagine all'interno del contenitore */
+    object-fit: cover;
+    /* Riempie l'area del contenitore mantenendo le proporzioni */
+    object-position: center;
+    /* Centra l'immagine all'interno del contenitore */
 }
 
 .boxOld {
@@ -126,7 +132,7 @@ body{
     color: white;
 }
 
-.boxDragon{
+.boxDragon {
     position: absolute;
     margin-top: -4vh;
     width: 100%;
@@ -245,13 +251,13 @@ body{
         display: none;
 
     }
-  
-    .boxDragon{
+
+    .boxDragon {
         display: none;
 
     }
 
-    .Old-text{
+    .Old-text {
         display: none;
     }
 }
@@ -268,7 +274,7 @@ body{
 
     .custom-dots {
         margin-top: -3.84vh
-        /* Riduci lo spazio sopra i punti di navigazione */
+            /* Riduci lo spazio sopra i punti di navigazione */
     }
 
     .custom-dots .dot {
@@ -313,7 +319,7 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 53vh;
-        
+
     }
 
     .myButton {
@@ -335,4 +341,133 @@ body{
 /*----------TABLET------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .amosShade {
+        height: 60vw;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .introPayOff {
+        font-size: 2vw;
+        opacity: 0;
+        position: absolute;
+        color: white;
+        font-family: payoff;
+        text-align: center;
+        margin-top: 50.713vh;
+    }
+
+    .boxOld {
+        position: absolute;
+        bottom: 1vh;
+        left: 44%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 1vw;
+        text-align: left;
+        color: white;
+    }
+
+    .Old-text {
+        position: absolute;
+        margin-top: -46.601vh;
+        color: white;
+        margin-left: 50vw;
+        font-size: 3.953vw;
+        font-family: titoli;
+    }
+
+    .old-desc {
+        position: relative;
+        margin-top: -39.748vh;
+        color: white;
+        margin-left: 50vw;
+        font-family: paragrafo;
+        font-size: 1.5vw;
+        width: 50vw;
+    }
+
+    .myButton {
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 36.531vw;
+        height: 6.853vh;
+        font-family: titoli;
+        font-size: 2vw;
+        color: white;
+        border-radius: 4.953vw;
+        text-align: center;
+        align-items: center;
+        padding: 0.521vw;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .Old-text {
+        position: absolute;
+        margin-top: -46.601vh;
+        color: white;
+        margin-left: 50vw;
+        font-size: 3.953vw;
+        font-family: titoli;
+    }
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1.7vw;
+        width: 1vw;
+        margin: 1.781vw;
+        border-radius: 100%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-dots {
+        text-align: center;
+        z-index: 9990;
+        position: absolute;
+        margin-top: -7vw;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .boxOld {
+        position: absolute;
+        bottom: 3vh;
+        left: 44%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 1vw;
+        text-align: left;
+        color: white;
+    }
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1vw;
+        width: 1vw;
+        margin: 1.781vw;
+        border-radius: 100%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-dots {
+        text-align: center;
+        z-index: 9990;
+        position: absolute;
+        margin-top: -4vw;
+    }
 }
