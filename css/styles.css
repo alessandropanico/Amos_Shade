@@ -17,7 +17,7 @@
 /*------------------------*/
 
 .body{
-    overflow: hidden;
+    overflow-y: scroll;
     background-color: black;
     z-index: -1;
 }
@@ -61,15 +61,12 @@
 
 }
 
-.global {
-    overflow-y: hidden;
-}
+
 
 #main-content {
     transition: opacity 0.5s ease-in-out;
-    /* Aggiungi una transizione per l'opacità */
     opacity: 0;
-    /* Imposta l'opacità iniziale a 0 */
+    z-index: 9999;
 }
 
 
@@ -92,6 +89,7 @@
 
 .slider {
     width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -271,10 +269,6 @@
 
 
 @media screen and (max-width: 600px) {
-
-    .global {
-        overflow-y: hidden;
-    }
 
 
     .amosShade {
