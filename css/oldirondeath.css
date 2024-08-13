@@ -130,12 +130,12 @@
     margin-top: 27.412vh;
 }
 
-.cont{
+.cont {
     flex-direction: row;
     display: flex;
 }
 
-.cont2{
+.cont2 {
     flex-direction: row;
     display: flex;
 }
@@ -213,16 +213,16 @@
     }
 
 
-    .space200{
+    .space200 {
         margin-top: 10vh;
     }
-       
-    .space100{
+
+    .space100 {
         margin-top: 5vh;
     }
 
     .custom-container2 {
-        max-width: 90vw; 
+        max-width: 90vw;
     }
 
     .row-cols-2>* {
@@ -245,13 +245,13 @@
         font-family: titoli;
     }
 
-    .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1* var(--bs-gutter-y));
-    margin-right: calc(-.5* var(--bs-gutter-x));
-    margin-left: calc(-.5* var(--bs-gutter-x));
-    align-items: center;
-    justify-content: center;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1* var(--bs-gutter-y));
+        margin-right: calc(-.5* var(--bs-gutter-x));
+        margin-left: calc(-.5* var(--bs-gutter-x));
+        align-items: center;
+        justify-content: center;
     }
 }
