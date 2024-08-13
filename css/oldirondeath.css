@@ -26,7 +26,6 @@
 }
 
 .icona {
-    /* width: 9.766vw; */
     width: 5vw;
     align-items: center;
     justify-content: center;
@@ -254,4 +253,48 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+
+@media screen and (width: 768px) {
+
+    .titolo2 {
+        color: white;
+        font-size: 2vw;
+        font-family: titoli;
+    }
+
+
+    .icona {
+        width: 13vw;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -0.741vh;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1* var(--bs-gutter-y));
+        margin-right: calc(-.5* var(--bs-gutter-x));
+        margin-left: calc(-.5* var(--bs-gutter-x));
+        justify-content: center;
+    }
+
+
+}
+
+
+@media screen and (width:1024px) {
+
+    .titolo2 {
+        color: white;
+        font-size: 1vw;
+        font-family: titoli;
+    }
+
+  
+
 }

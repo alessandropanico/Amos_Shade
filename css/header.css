@@ -88,6 +88,6 @@
     .myNav a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 2vw; /* Ridotto da 1.302vw per stringere */
+        font-size: 1.7vw; 
     }
 }
