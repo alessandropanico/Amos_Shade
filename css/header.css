@@ -115,3 +115,23 @@
     }
 }
 
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    .oid {
+        width: 20vw;
+       
+    }
+
+    .logo {
+        width: 8vw;
+    }
+
+    .myNav a {
+        font-size: 2vw; /* Riduci un po' il font-size */
+    }
+
+    li{
+        margin-right: -2vw;
+    }
+
+}
