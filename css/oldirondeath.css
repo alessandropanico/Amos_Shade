@@ -293,16 +293,16 @@
 
     .titolo2 {
         color: white;
-        font-size: 2vw;
+        font-size: 1vw;
         font-family: titoli;
     }
 
 
     .icona {
-        width: 13vw;
+        width: 7vw;
         align-items: center;
         justify-content: center;
-        margin-bottom: -0.741vh;
+        margin-bottom: 1.259vh;
     }
 
     .row {

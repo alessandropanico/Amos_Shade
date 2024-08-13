@@ -178,7 +178,7 @@ body {
     /* Regola l'altezza dei punti */
     width: 0.651vw;
     margin: 0.781vw;
-    border-radius: 100%;
+    border-radius: 50%;
     /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
     background-color: #424242;
     border: none;
@@ -279,10 +279,10 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 2vw !important;
+        height: 2vh !important;
         width: 1vw;
         margin: 1.781vw;
-        border-radius: 100%;
+        border-radius: 50%;
         background-color: #424242;
         border: none;
         cursor: pointer;
@@ -438,10 +438,10 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 1.7vw !important;
+        height: 1.7vh !important;
         width: 1vw;
         margin: 1.781vw;
-        border-radius: 100%;
+        border-radius: 50%;
         background-color: #424242;
         border: none;
         cursor: pointer;
@@ -494,10 +494,10 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 1vw;
+        height: 1vh;
         width: 1vw;
         margin: 1.781vw;
-        border-radius: 100%;
+        border-radius: 50%;
         background-color: #424242;
         border: none;
         cursor: pointer;
@@ -525,6 +525,15 @@ body {
 
 @media screen and (min-width: 601px) and (max-width:767px) {
 
+    .amosShade {
+        height: 50vw;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .myButton {
         background-color: transparent;
         border: solid 0.052vw white;
@@ -551,10 +560,10 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 2vw !important;
+        height: 2vh !important;
         width: 1vw;
         margin: 1.781vw;
-        border-radius: 100%;
+        border-radius: 50%;
         background-color: #424242;
         border: none;
         cursor: pointer;
@@ -572,16 +581,16 @@ body {
         position: absolute;
         margin-top: -20.559vh;
         color: white;
-        margin-left: 47vw;
-        font-size: 2vw;
+        margin-left: 25vw;
+        font-size: 4vw;
         font-family: titoli;
     }
 
     .dragon-desc {
         position: relative;
-        margin-top: -16.706vh;
+        margin-top: -15.706vh;
         color: white;
-        margin-left: 46vw;
+        margin-left: 25vw;
         font-family: paragrafo;
         font-size: 0.911vw;
     }
