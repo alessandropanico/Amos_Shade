@@ -55,8 +55,48 @@
     font-size: 1.5vw;
 }
 
+
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
 /* Responsive adjustments */
+@media screen and (min-width: 601px) and (max-width:767px) {
+    .oid {
+        width: 16vw;
+       
+    }
+
+    .logo {
+        width: 6vw;
+    }
+
+    .myNav a {
+        font-size: 1.5vw; /* Riduci un po' il font-size */
+    }
+
+    li{
+        margin-right: -2vw;
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 600px) {
+
+    .desktop{
+        display: none !important;
+    }
+    
+    .mobile{
+        display: block;
+    }
     .oid {
         width: 30%;
     }
@@ -67,6 +107,7 @@
 
     .myNav a {
         font-size: 3vw;
+        display: block;
     }
 
     .header-blur{
@@ -74,20 +115,3 @@
     }
 }
 
-/*----TABLET---*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .oid {
-        width: 20vw;
-    }
-
-    .logo {
-        width: 7vw;
-    }
-
-    .myNav a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 1.7vw; 
-    }
-}

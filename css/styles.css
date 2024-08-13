@@ -521,3 +521,95 @@ body {
         margin-top: 37vh;
     }
 }
+
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+
+    .myButton {
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 38.531vw;
+        height: 6.853vh;
+        font-family: titoli;
+        font-size: 2.042vw;
+        color: white;
+        border-radius: 4.953vw;
+        text-align: center;
+        align-items: center;
+        padding: 0.521vw;
+    }
+
+    .old-desc {
+        position: relative;
+        margin-top: -40.748vh;
+        color: white;
+        margin-left: 50vw;
+        font-family: paragrafo;
+        font-size: 1.781vw;
+        width: 50vw;
+    }
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 2vw;
+        width: 1vw;
+        margin: 1.781vw;
+        border-radius: 100%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-dots {
+        text-align: center;
+        z-index: 9990;
+        position: absolute;
+        margin-top: -5vw;
+    }
+
+    .dragon-text {
+        position: absolute;
+        margin-top: -20.559vh;
+        color: white;
+        margin-left: 47vw;
+        font-size: 2vw;
+        font-family: titoli;
+    }
+
+    .dragon-desc {
+        position: relative;
+        margin-top: -16.706vh;
+        color: white;
+        margin-left: 46vw;
+        font-family: paragrafo;
+        font-size: 0.911vw;
+    }
+
+    .titolo2 {
+        color: white;
+        font-size: 1.8vw !important;
+        font-family: titoli;
+    }
+
+
+    .icona {
+        width: 7vw !important;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -0.741vh !important;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        margin-top: calc(-1* var(--bs-gutter-y));
+        margin-right: calc(-.5* var(--bs-gutter-x));
+        margin-left: calc(-.5* var(--bs-gutter-x));
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

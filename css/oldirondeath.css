@@ -255,6 +255,39 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .titolo2 {
+        color: white;
+        font-size: 1.5vw;
+        font-family: titoli;
+    }
+
+    .icona {
+        width: 10vw;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -1.5vh;
+    }
+
+    .custom-container2 {
+        max-width: 70vw;
+    }
+
+    .row-cols-2 > * {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   
+}
+
 
 @media screen and (width: 768px) {
 
@@ -295,6 +328,15 @@
         font-family: titoli;
     }
 
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row;
+    }
   
-
+    .row-cols-2 > * {
+        flex: 0 0 auto !important;
+        width: auto !important; 
+    }
 }
