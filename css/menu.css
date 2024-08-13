@@ -71,10 +71,10 @@
     .logomenu {
         width: 20vw;
         display: block;
-        margin-top: -2vw;
+        margin-top: -3vw;
         margin-left: -4vw;
-        border: solid 1px;
-        border-radius: 20px;
+        border: solid 0.242vw;
+        border-radius: 4.831vw;
         backdrop-filter: blur(7px);
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 1001;

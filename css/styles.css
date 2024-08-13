@@ -262,7 +262,7 @@ body {
     }
 }
 
-/*-------------SLIDE RESPONSIVE------------*/
+
 
 @media screen and (max-width: 600px) {
 
@@ -279,7 +279,7 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 2.7vw !important;
+        height: 2vw !important;
         width: 1vw;
         margin: 1.781vw;
         border-radius: 100%;
@@ -438,7 +438,7 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 1.7vw;
+        height: 1.7vw !important;
         width: 1vw;
         margin: 1.781vw;
         border-radius: 100%;
@@ -551,7 +551,7 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 2vw;
+        height: 2vw !important;
         width: 1vw;
         margin: 1.781vw;
         border-radius: 100%;
