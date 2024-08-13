@@ -38,7 +38,7 @@ body {
     color: white;
     font-family: payoff;
     text-align: center;
-    margin-top: 50.713vh;
+    margin-top: 38vh;
 }
 
 
@@ -273,13 +273,13 @@ body {
     }
 
     .custom-dots {
-        margin-top: -3.84vh
+        margin-top: -3.84vh !important
             /* Riduci lo spazio sopra i punti di navigazione */
     }
 
     .custom-dots .dot {
         display: inline-block;
-        height: 2.7vw;
+        height: 2.7vw !important;
         width: 1vw;
         margin: 1.781vw;
         border-radius: 100%;
@@ -292,7 +292,7 @@ body {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width:400px)and (max-width: 600px) {
 
 
     .amosShade {
@@ -318,7 +318,7 @@ body {
         text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 53vh;
+        margin-top: 47vh !important;
 
     }
 
@@ -350,7 +350,7 @@ body {
         transform: translate(-50%, -50%);
     }
 
-  
+
 
     .boxOld {
         position: absolute;
@@ -465,7 +465,8 @@ body {
         margin-top: 37vh;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
