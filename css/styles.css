@@ -17,11 +17,13 @@
 /*------------------------*/
 
 #primo {
-    overflow: hidden;
-    touch-action: none; /* Disabilita gesti touch */
-    pointer-events: none; /* Disabilita click e altre interazioni */
-    user-select: none; /* Disabilita selezione di testo */
-    overscroll-behavior: contain; /* Contiene lo scroll */
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    touch-action: none !important; /* Disabilita gesti touch */
+    pointer-events: none !important; /* Disabilita click e altre interazioni */
+    user-select: none !important; /* Disabilita selezione di testo */
+    overscroll-behavior: contain !important; /* Contiene lo scroll */
 }
 
 body {
