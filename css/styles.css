@@ -16,8 +16,6 @@
 
 /*------------------------*/
 
-
-
 /* Classe per disabilitare lo scroll e touch */
 .disable-scroll-touch {
     overflow: hidden; /* Disabilita lo scroll */
@@ -27,7 +25,9 @@
     height: 100%; /* Imposta l'altezza per evitare scroll verticale */
 }
 
-
+.spazioContact{
+    margin-left: 0.6vw;
+}
 
 body {
     overflow-y: scroll;
@@ -634,4 +634,12 @@ body {
         justify-content: center;
     }
 
+}
+
+/*-------------------------------------------------*/
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 90vw;
+    }
 }
