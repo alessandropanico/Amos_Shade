@@ -187,17 +187,14 @@ body {
 
 .custom-dots .dot {
     display: inline-block;
-    height: 0.7vw;
-    /* Regola l'altezza dei punti */
-    width: 0.651vw;
-    margin: 0.781vw;
+    height: 1.1vh;
+    width: 0.5vw;
+    margin: 2.2vw;
     border-radius: 50%;
-    /* Assicurati che questo valore sia adatto al rapporto di altezza e larghezza */
     background-color: #424242;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
 
@@ -290,22 +287,28 @@ body {
             /* Riduci lo spazio sopra i punti di navigazione */
     }
 
+ 
+
+
+}
+
+
+
+@media screen and (min-width:300px)and (max-width: 600px) {
+
+
     .custom-dots .dot {
         display: inline-block;
-        height: 2vh !important;
-        width: 1vw;
-        margin: 1.781vw;
+        height: 1vh !important;
+        width: 1.5vw !important;
+        margin: 1.2vw;
+        margin-left: 8vw;
         border-radius: 50%;
         background-color: #424242;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-}
-
-
-
-@media screen and (min-width:300px)and (max-width: 600px) {
 
 
     .amosShade {
@@ -353,6 +356,8 @@ body {
 
 /*----------TABLET------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
 
     .amosShade {
         height: 60vw;
@@ -440,6 +445,19 @@ body {
 
 @media screen and (max-width:768px) {
 
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1vh !important;
+        width: 1.5vw !important;
+        margin: 1.2vw;
+        margin-left: 8vw;
+        border-radius: 50%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
     .Old-text {
         position: absolute;
         margin-top: -46.601vh;
@@ -449,17 +467,7 @@ body {
         font-family: titoli;
     }
 
-    .custom-dots .dot {
-        display: inline-block;
-        height: 1.7vh !important;
-        width: 1vw;
-        margin: 1.781vw;
-        border-radius: 50%;
-        background-color: #424242;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+   
 
     .custom-dots {
         text-align: center;
@@ -494,6 +502,19 @@ body {
 
 @media screen and (max-width:1024px) {
 
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1.1vh ;
+        width: 1vw ;
+        margin: 1.2vw;
+        margin-left: 8vw;
+        border-radius: 50%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
     .boxOld {
         position: absolute;
         bottom: 3vh;
@@ -505,17 +526,7 @@ body {
         color: white;
     }
 
-    .custom-dots .dot {
-        display: inline-block;
-        height: 1vh;
-        width: 1vw;
-        margin: 1.781vw;
-        border-radius: 50%;
-        background-color: #424242;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+  
 
     .custom-dots {
         text-align: center;
@@ -537,6 +548,19 @@ body {
 
 
 @media screen and (min-width: 601px) and (max-width:767px) {
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1vh !important;
+        width: 1.5vw !important;
+        margin: 1.2vw;
+        margin-left: 8vw;
+        border-radius: 50%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
     .amosShade {
         height: 50vw;
@@ -571,17 +595,7 @@ body {
         width: 50vw;
     }
 
-    .custom-dots .dot {
-        display: inline-block;
-        height: 2vh !important;
-        width: 1vw;
-        margin: 1.781vw;
-        border-radius: 50%;
-        background-color: #424242;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+    
 
     .custom-dots {
         text-align: center;
