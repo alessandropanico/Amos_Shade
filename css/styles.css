@@ -16,6 +16,14 @@
 
 /*------------------------*/
 
+#primo {
+    overflow: hidden;
+    touch-action: none; /* Disabilita gesti touch */
+    pointer-events: none; /* Disabilita click e altre interazioni */
+    user-select: none; /* Disabilita selezione di testo */
+    overscroll-behavior: contain; /* Contiene lo scroll */
+}
+
 body {
     overflow-y: scroll;
     background-color: rgb(0, 0, 0);
