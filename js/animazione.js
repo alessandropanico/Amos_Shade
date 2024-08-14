@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Disabilita lo scroll e touch all'inizio dell'animazione
+    document.body.classList.add('disable-scroll-touch');
+
     var fadeInDuration = 1000;
     var fadeOutDuration = 1000;
     var waitDuration = 1000;
@@ -17,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         fadeIn('main-content', 2000);
                         // Disabilita completamente la sezione #primo
                         document.getElementById('primo').style.display = 'none';
+                        // Riabilita lo scroll e touch dopo l'animazione
+                        document.body.classList.remove('disable-scroll-touch');
                     }, finalWaitDuration);
                 });
             }, waitDuration);
         });
     }, fadeInDuration + waitDuration);
-
-
 });
 
 function fadeIn(elementId, duration, callback) {

@@ -16,15 +16,18 @@
 
 /*------------------------*/
 
-#primo {
-    overflow: hidden !important;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-    touch-action: none !important; /* Disabilita gesti touch */
-    pointer-events: none !important; /* Disabilita click e altre interazioni */
-    user-select: none !important; /* Disabilita selezione di testo */
-    overscroll-behavior: contain !important; /* Contiene lo scroll */
+
+
+/* Classe per disabilitare lo scroll e touch */
+.disable-scroll-touch {
+    overflow: hidden; /* Disabilita lo scroll */
+    touch-action: none; /* Disabilita le interazioni touch */
+    position: fixed; /* Fissa la posizione per evitare scroll */
+    width: 100%; /* Imposta la larghezza per evitare scroll orizzontale */
+    height: 100%; /* Imposta l'altezza per evitare scroll verticale */
 }
+
+
 
 body {
     overflow-y: scroll;
