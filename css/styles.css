@@ -265,17 +265,12 @@ body {
         display: none;
     }
 
-    .boxDragon {
-        display: none;
-
-    }
-
-    .boxDragon {
-        display: none;
-
-    }
 
     .Old-text {
+        display: none;
+    }
+
+    .dragon-desc{
         display: none;
     }
 }
@@ -310,6 +305,23 @@ body {
         left: 50% !important;
         margin-top: -12vh;
     }
+
+    .boxDragon{
+        margin: 0;
+        position: relative !important;
+        margin-top: -14.3vh;
+    }
+
+    .dragon-text {
+        position: absolute;
+        margin-top: -17.559vh;
+        margin-left: 0vw;
+        text-align: center;
+        color: white;
+        font-size: 6vw;
+        font-family: titoli;
+    }
+
 
     .custom-dots .dot {
         display: inline-block;
