@@ -2,6 +2,14 @@ body{
     background-color: black;
 }
 
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
 .myButton {
     background-color: transparent;
     border: solid 0.052vw white;
@@ -108,12 +116,21 @@ input {
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (min-width:300px) and (max-width:600px){
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+
 
     .myButton {
         background-color: transparent;
         border: solid 0.052vw white;
-        width: 42.531vw;
+        width: 100%;
         height: 5.853vh;
         font-family: titoli;
         font-size: 4.042vw;
@@ -125,7 +142,8 @@ input {
     }
 
     .sectionForm{
-        margin-top: 13vh;
+        margin-top: 40vw;
+
     }
 
     .titolo{
@@ -148,7 +166,6 @@ input {
     }
 
 }
-
 
 
 
