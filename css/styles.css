@@ -16,6 +16,14 @@
 
 /*------------------------*/
 
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
 /* Classe per disabilitare lo scroll e touch */
 .disable-scroll-touch {
     overflow: hidden; /* Disabilita lo scroll */
@@ -295,6 +303,48 @@ body {
 
 
 @media screen and (min-width:300px)and (max-width: 600px) {
+
+    .boxOld {
+        margin: 0;
+        position: relative !important;
+        left: 50% !important;
+        margin-top: -12vh;
+    }
+
+    .custom-dots .dot {
+        display: inline-block;
+        height: 1.1vh;
+        width: 1vw;
+        margin: 7.5vw !important;
+        margin-top: -1vh !important;
+        border-radius: 50%;
+        background-color: #424242;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .button2{
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 86.531vw;
+        height: 5.853vh;
+        font-family: titoli;
+        font-size: 4.042vw;
+        color: white;
+        border-radius: 9.953vw;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
 
 
     .custom-dots .dot {
