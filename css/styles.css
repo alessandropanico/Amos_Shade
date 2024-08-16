@@ -295,7 +295,19 @@ body {
 
 }
 
+@media screen and (min-width:200px)and (max-width: 599px) {
 
+.amosShade{
+    height: 84.541vw !important;
+}
+
+.introPayOff{
+    margin-top: 47vh !important;
+    font-size: 3vw !important;
+}
+
+
+}
 
 @media screen and (min-width:300px)and (max-width: 600px) {
 
