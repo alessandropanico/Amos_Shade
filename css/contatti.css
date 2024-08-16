@@ -2,6 +2,7 @@ body{
     background-color: black;
 }
 
+
 .desktop{
     display: block;
 }
@@ -20,8 +21,10 @@ body{
     color: white;
     border-radius: 1.953vw;
     text-align: center;
+    display: flex;
     align-items: center;
     padding: 0.521vw;
+    justify-content: center;
 }
 
 .titolo {
@@ -67,13 +70,13 @@ label {
 #amosForm,
 input {
     font-family: paragrafo;
-
+    
 }
 
 .form-control {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 0.3vw;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -116,7 +119,7 @@ input {
 }
 
 
-@media screen and (min-width:300px) and (max-width:600px){
+@media screen and (min-width:300px) and (max-width:600px) {
 
     .desktop{
         display: none;
@@ -126,6 +129,14 @@ input {
         display: block;
     }
 
+    #amosForm{
+        margin-top: 6vh;
+    }
+
+    .form-label {
+        margin-bottom: 0rem;
+        font-size: 5vw;
+    }
 
     .myButton {
         background-color: transparent;
@@ -138,16 +149,18 @@ input {
         border-radius: 9.953vw;
         text-align: center;
         padding: 0px;
+        display: flex;
+        justify-content: center;
 
     }
 
     .sectionForm{
-        margin-top: 40vw;
+        margin-top: 21vw;
 
     }
 
     .titolo{
-        font-size: 6vw;
+        font-size: 10vw !important;
         text-align: center;
     }
 
@@ -156,17 +169,133 @@ input {
     }
 
     .descrizione {
-        font-size: 3.2vw;
+        font-size: 4vw !important;
         text-align: center;
+        margin-top: 1vw;
     }
 
     .mail{
         font-size: 2.7vw;
         text-align: center;
+        margin-top: 2vw;
+
+    }
+
+   
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 4vh;
+        padding: 1vw;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-clip: padding-box;
+        border-radius: var(--bs-border-radius);
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
 }
 
+@media screen and (min-width:601px) and (max-width:767px) and (orientation: portrait) {
+
+    .sectionForm{
+        margin-top: 15vw;
+
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .titolo {
+        color: white;
+        font-size: 6.953vw !important;
+        font-family: titoli;
+    }
+
+    .descrizione {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 2.5vw !important;
+    }
 
 
+    .mail {
+        font-family: payoff;
+        color: white;
+        font-size: 2.5vw;
+    }
 
+    .form-control{
+        padding: 1vw;
+    }
+
+    .myButton {
+        width: 100% !important;
+        height: 6.853vh !important;
+        font-size: 4.042vw !important;
+        border-radius: 5.953vw !important;
+        display: flex;
+        justify-content: center;
+    }
+
+
+} 
+
+ @media screen and (min-width:767px) and (max-width:1024px){
+
+    .sectionForm {
+        margin-top: 10vw;
+    }
+    
+    .titolo {
+        color: white;
+        font-size: 3.953vw;
+        font-family: titoli;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .descrizione {
+        text-align: center;
+        color: white;
+        font-family: paragrafo;
+        font-size: 2.042vw;
+    }
+
+    .mail {
+        font-family: payoff;
+        color: white;
+        font-size: 2.5vw;
+    }
+
+    .form-label {
+        margin-bottom: 0rem;
+        font-size: 3vw;
+    }
+
+    .myButton {
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 100%;
+        height: 6.853vh;
+        font-family: titoli;
+        font-size: 4.042vw;
+        color: white;
+        border-radius: 5.953vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+} 
