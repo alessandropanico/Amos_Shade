@@ -422,7 +422,7 @@ body {
 
 
     .amosShade {
-        height: 84.541vw;
+        height: 55%;
         /* Altezza desiderata */
         width: auto;
         position: absolute;
@@ -436,7 +436,7 @@ body {
 
 
     .introPayOff {
-        font-size: 3vw;
+        font-size: 3vw !important;
         opacity: 0;
         position: absolute;
         color: white;
@@ -444,7 +444,7 @@ body {
         text-align: center;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 47vh !important;
+        margin-top: 48vh !important;
 
     }
 
