@@ -265,7 +265,6 @@ body {
         display: none;
     }
 
-
     .Old-text {
         display: none;
     }
@@ -295,17 +294,53 @@ body {
 
 }
 
-@media screen and (min-width:200px)and (max-width: 599px) {
+@media screen and (min-width:200px)and (max-width: 299px) {
 
 .amosShade{
     height: 84.541vw !important;
 }
 
 .introPayOff{
-    margin-top: 47vh !important;
+    margin-top: 46vh !important;
     font-size: 3vw !important;
 }
 
+.button2{
+        background-color: transparent;
+        border: solid 0.052vw white;
+        width: 86.531vw;
+        height: 5.853vh;
+        font-family: titoli;
+        font-size: 4.042vw;
+        color: white;
+        border-radius: 9.953vw;
+        text-align: center;
+        padding: 0px;
+}
+
+.boxOld {
+    margin: 0;
+    position: relative !important;
+    left: 50% !important;
+    margin-top: -14.7vh !important;
+    bottom: 0vh !important;
+}
+
+.boxDragon{
+    margin: 0;
+    position: relative !important;
+    margin-top: -14.3vh;
+}
+
+.dragon-text {
+    position: absolute;
+    margin-top: -17.559vh;
+    margin-left: 0vw;
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    font-family: titoli;
+}
 
 }
 
@@ -315,7 +350,8 @@ body {
         margin: 0;
         position: relative !important;
         left: 50% !important;
-        margin-top: -12vh;
+        margin-top: -14.6vh;
+        bottom: 0vh !important;
     }
 
     .boxDragon{
