@@ -28,6 +28,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 0.052vw solid white;
     top: 0;
+    z-index: 9999;
 }
 
 .oid {

@@ -16,24 +16,29 @@
 
 /*------------------------*/
 
-.desktop{
+.desktop {
     display: block;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
 /* Classe per disabilitare lo scroll e touch */
 .disable-scroll-touch {
-    overflow: hidden; /* Disabilita lo scroll */
-    touch-action: none; /* Disabilita le interazioni touch */
-    position: fixed; /* Fissa la posizione per evitare scroll */
-    width: 100%; /* Imposta la larghezza per evitare scroll orizzontale */
-    height: 100%; /* Imposta l'altezza per evitare scroll verticale */
+    overflow: hidden;
+    /* Disabilita lo scroll */
+    touch-action: none;
+    /* Disabilita le interazioni touch */
+    position: fixed;
+    /* Fissa la posizione per evitare scroll */
+    width: 100%;
+    /* Imposta la larghezza per evitare scroll orizzontale */
+    height: 100%;
+    /* Imposta l'altezza per evitare scroll verticale */
 }
 
-.spazioContact{
+.spazioContact {
     margin-left: 0.6vw;
 }
 
@@ -269,7 +274,7 @@ body {
         display: none;
     }
 
-    .dragon-desc{
+    .dragon-desc {
         display: none;
     }
 }
@@ -289,23 +294,23 @@ body {
             /* Riduci lo spazio sopra i punti di navigazione */
     }
 
- 
+
 
 
 }
 
 @media screen and (min-width:200px)and (max-width: 299px) {
 
-.amosShade{
-    height: 84.541vw !important;
-}
+    .amosShade {
+        height: 84.541vw !important;
+    }
 
-.introPayOff{
-    margin-top: 46vh !important;
-    font-size: 3vw !important;
-}
+    .introPayOff {
+        margin-top: 46vh !important;
+        font-size: 3vw !important;
+    }
 
-.button2{
+    .button2 {
         background-color: transparent;
         border: solid 0.052vw white;
         width: 86.531vw;
@@ -316,31 +321,31 @@ body {
         border-radius: 9.953vw;
         text-align: center;
         padding: 0px;
-}
+    }
 
-.boxOld {
-    margin: 0;
-    position: relative !important;
-    left: 50% !important;
-    margin-top: -14.7vh !important;
-    bottom: 0vh !important;
-}
+    .boxOld {
+        margin: 0;
+        position: relative !important;
+        left: 50% !important;
+        margin-top: -14.7vh !important;
+        bottom: 0vh !important;
+    }
 
-.boxDragon{
-    margin: 0;
-    position: relative !important;
-    margin-top: -14.3vh;
-}
+    .boxDragon {
+        margin: 0;
+        position: relative !important;
+        margin-top: -14.3vh;
+    }
 
-.dragon-text {
-    position: absolute;
-    margin-top: -17.559vh;
-    margin-left: 0vw;
-    text-align: center;
-    color: white;
-    font-size: 6vw;
-    font-family: titoli;
-}
+    .dragon-text {
+        position: absolute;
+        margin-top: -17.559vh;
+        margin-left: 0vw;
+        text-align: center;
+        color: white;
+        font-size: 6vw;
+        font-family: titoli;
+    }
 
 }
 
@@ -354,7 +359,7 @@ body {
         bottom: 0vh !important;
     }
 
-    .boxDragon{
+    .boxDragon {
         margin: 0;
         position: relative !important;
         margin-top: -14.3vh;
@@ -385,7 +390,7 @@ body {
     }
 
 
-    .button2{
+    .button2 {
         background-color: transparent;
         border: solid 0.052vw white;
         width: 86.531vw;
@@ -398,11 +403,11 @@ body {
         padding: 0px;
     }
 
-    .desktop{
+    .desktop {
         display: none;
     }
-    
-    .mobile{
+
+    .mobile {
         display: block;
     }
 
@@ -577,7 +582,7 @@ body {
         font-family: titoli;
     }
 
-   
+
 
     .custom-dots {
         text-align: center;
@@ -614,8 +619,8 @@ body {
 
     .custom-dots .dot {
         display: inline-block;
-        height: 1.1vh ;
-        width: 1vw ;
+        height: 1.1vh;
+        width: 1vw;
         margin: 1.2vw;
         margin-left: 8vw;
         border-radius: 50%;
@@ -636,7 +641,7 @@ body {
         color: white;
     }
 
-  
+
 
     .custom-dots {
         text-align: center;
@@ -705,7 +710,7 @@ body {
         width: 50vw;
     }
 
-    
+
 
     .custom-dots {
         text-align: center;
@@ -761,4 +766,3 @@ body {
 }
 
 /*-------------------------------------------------*/
-
