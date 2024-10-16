@@ -23,7 +23,6 @@
 .header-blur {
     position: fixed;
     width: 100%;
-    z-index: 1000;
     backdrop-filter: blur(7px);
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 0.052vw solid white;
