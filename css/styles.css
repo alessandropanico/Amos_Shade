@@ -766,3 +766,21 @@ body {
 }
 
 /*-------------------------------------------------*/
+
+/* Stato iniziale: elemento nascosto e spostato */
+.reveal {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+/* Variante: entra da sinistra */
+.reveal.left {
+    transform: translateX(-50px);
+}
+
+/* Quando diventa visibile */
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
